@@ -13,16 +13,8 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table';
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogFooter
-} from '@/components/ui/dialog';
 import { format } from 'date-fns';
-import { Mail, Trash2, Eye, Archive } from 'lucide-react';
+import { Trash2, Eye, Archive } from 'lucide-react';
 import { updateInquiryStatus, deleteInquiry } from '@/app/actions/inquiries';
 import { toast } from 'sonner';
 import { useRouter } from 'next/navigation';
@@ -54,42 +46,6 @@ interface InquiriesClientProps {
 
 export function InquiriesClient({ initialData }: InquiriesClientProps) {
   const router = useRouter();
-  const [selectedInquiry, setSelectedInquiry] = useState<Inquiry | null>(null);
-  const [isViewOpen, setIsViewOpen] = useState(false);
-
-  const getParsedFields = (inquiry: Inquiry | null) => {
-    if (!inquiry || !inquiry.subject) {
-      return {
-        budget: '',
-        mobile: '',
-        cleanSubject: ''
-      };
-    }
-
-    const parts = inquiry.subject.split('|').map((part) => part.trim());
-    let budget = '';
-    let mobile = '';
-    const remaining: string[] = [];
-
-    parts.forEach((part) => {
-      const lower = part.toLowerCase();
-      if (lower.startsWith('budget')) {
-        const value = part.split(':')[1];
-        budget = value ? value.trim() : '';
-      } else if (lower.startsWith('mobile')) {
-        const value = part.split(':')[1];
-        mobile = value ? value.trim() : '';
-      } else {
-        remaining.push(part);
-      }
-    });
-
-    return {
-      budget,
-      mobile,
-      cleanSubject: remaining.join(' | ').trim()
-    };
-  };
 
   const onStatusUpdate = async (id: string, status: string) => {
     try {
@@ -119,12 +75,8 @@ export function InquiriesClient({ initialData }: InquiriesClientProps) {
     }
   };
 
-  const handleView = (inquiry: Inquiry) => {
-    setSelectedInquiry(inquiry);
-    setIsViewOpen(true);
-    if (inquiry.status === 'unread') {
-      onStatusUpdate(inquiry.id, 'read');
-    }
+  const handleView = (id: string) => {
+    router.push(`/dashboard/inquiries/${id}`);
   };
 
   return (
@@ -175,9 +127,7 @@ export function InquiriesClient({ initialData }: InquiriesClientProps) {
                     </div>
                   </TableCell>
                   <TableCell>
-                    {getParsedFields(inquiry).cleanSubject ||
-                      inquiry.subject ||
-                      'No Subject'}
+                    {inquiry.subject?.split('|')[0].trim() || 'No Subject'}
                   </TableCell>
                   <TableCell>
                     <Badge
@@ -197,7 +147,7 @@ export function InquiriesClient({ initialData }: InquiriesClientProps) {
                       <Button
                         variant='ghost'
                         size='icon'
-                        onClick={() => handleView(inquiry)}
+                        onClick={() => handleView(inquiry.id)}
                       >
                         <Eye className='h-4 w-4' />
                       </Button>
@@ -242,92 +192,6 @@ export function InquiriesClient({ initialData }: InquiriesClientProps) {
           </TableBody>
         </Table>
       </div>
-
-      <Dialog open={isViewOpen} onOpenChange={setIsViewOpen}>
-        <DialogContent className='max-w-3xl'>
-          <DialogHeader>
-            <div className='flex items-center justify-between'>
-              <DialogTitle>Inquiry Details</DialogTitle>
-              <Badge
-                variant={
-                  selectedInquiry?.status === 'unread'
-                    ? 'destructive'
-                    : selectedInquiry?.status === 'read'
-                      ? 'secondary'
-                      : 'outline'
-                }
-              >
-                {selectedInquiry?.status}
-              </Badge>
-            </div>
-            <DialogDescription>
-              Received on{' '}
-              {selectedInquiry &&
-                format(new Date(selectedInquiry.createdAt), 'PPPP p')}
-            </DialogDescription>
-          </DialogHeader>
-          <div className='space-y-6 py-4'>
-            <div className='grid grid-cols-1 gap-6 md:grid-cols-3'>
-              <div className='space-y-1'>
-                <div className='text-muted-foreground text-xs font-semibold uppercase'>
-                  From
-                </div>
-                <p className='text-sm font-semibold'>{selectedInquiry?.name}</p>
-                <p className='text-muted-foreground text-sm'>
-                  {selectedInquiry?.email}
-                </p>
-              </div>
-              <div className='space-y-1'>
-                <div className='text-muted-foreground text-xs font-semibold uppercase'>
-                  Budget
-                </div>
-                <p className='text-sm'>
-                  {getParsedFields(selectedInquiry).budget || 'Not provided'}
-                </p>
-              </div>
-              <div className='space-y-1'>
-                <div className='text-muted-foreground text-xs font-semibold uppercase'>
-                  Mobile
-                </div>
-                <p className='text-sm'>
-                  {getParsedFields(selectedInquiry).mobile || 'Not provided'}
-                </p>
-              </div>
-            </div>
-            <Separator />
-            <div className='space-y-2'>
-              <div className='text-muted-foreground text-xs font-semibold uppercase'>
-                Subject
-              </div>
-              <p className='text-sm font-medium'>
-                {getParsedFields(selectedInquiry).cleanSubject ||
-                  selectedInquiry?.subject ||
-                  'Website Inquiry'}
-              </p>
-            </div>
-            <div className='space-y-2'>
-              <div className='text-muted-foreground text-xs font-semibold uppercase'>
-                Message
-              </div>
-              <div className='bg-muted/50 rounded-md p-4 text-sm whitespace-pre-wrap'>
-                {selectedInquiry?.message}
-              </div>
-            </div>
-          </div>
-          <DialogFooter>
-            <Button variant='outline' onClick={() => setIsViewOpen(false)}>
-              Close
-            </Button>
-            <Button asChild>
-              <a
-                href={`mailto:${selectedInquiry?.email}?subject=Re: ${selectedInquiry?.subject || 'Inquiry'}`}
-              >
-                <Mail className='mr-2 h-4 w-4' /> Reply
-              </a>
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 }

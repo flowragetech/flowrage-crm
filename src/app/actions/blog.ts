@@ -242,6 +242,22 @@ export async function updateBlogPostPublished(id: string, published: boolean) {
 }
 
 // Category Actions
+export async function getCategoryById(id: string) {
+  try {
+    return await withTimeout(
+      prisma.category.findUnique({
+        where: { id },
+        include: {
+          seoMetadata: true
+        }
+      }),
+      10000
+    );
+  } catch {
+    return null;
+  }
+}
+
 export async function getCategories() {
   try {
     return await withTimeout(
@@ -376,6 +392,22 @@ export async function deleteCategory(id: string) {
 }
 
 // Tag Actions
+export async function getTagById(id: string) {
+  try {
+    return await withTimeout(
+      prisma.tag.findUnique({
+        where: { id },
+        include: {
+          seoMetadata: true
+        }
+      }),
+      10000
+    );
+  } catch {
+    return null;
+  }
+}
+
 export async function getTags() {
   try {
     return await withTimeout(

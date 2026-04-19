@@ -10,17 +10,9 @@ import {
   TableBody,
   TableCell,
   TableHead,
-  TableHeader,
   TableRow
 } from '@/components/ui/table';
 import { Badge } from '@/components/ui/badge';
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger
-} from '@/components/ui/dialog';
 import { RedirectForm } from './redirect-form';
 import { deleteRedirect } from '@/app/actions/seo';
 import { toast } from 'sonner';
@@ -52,8 +44,6 @@ interface RedirectsClientProps {
 
 export function RedirectsClient({ initialData }: RedirectsClientProps) {
   const router = useRouter();
-  const [isOpen, setIsOpen] = useState(false);
-  const [editingRedirect, setEditingRedirect] = useState<Redirect | null>(null);
 
   const onDelete = async (id: string) => {
     try {
@@ -76,30 +66,12 @@ export function RedirectsClient({ initialData }: RedirectsClientProps) {
           title={`SEO Redirects (${initialData.length})`}
           description='Manage 301 and 302 redirects for your site.'
         />
-        <Dialog
-          open={isOpen}
-          onOpenChange={(open) => {
-            setIsOpen(open);
-            if (!open) setEditingRedirect(null);
-          }}
+        <Button
+          size='sm'
+          onClick={() => router.push('/dashboard/seo/redirects/new')}
         >
-          <DialogTrigger asChild>
-            <Button size='sm'>
-              <Plus className='mr-2 h-4 w-4' /> Add Redirect
-            </Button>
-          </DialogTrigger>
-          <DialogContent>
-            <DialogHeader>
-              <DialogTitle>
-                {editingRedirect ? 'Edit Redirect' : 'Add New Redirect'}
-              </DialogTitle>
-            </DialogHeader>
-            <RedirectForm
-              initialData={editingRedirect}
-              onSuccess={() => setIsOpen(false)}
-            />
-          </DialogContent>
-        </Dialog>
+          <Plus className='mr-2 h-4 w-4' /> Add Redirect
+        </Button>
       </div>
       <Separator />
 
@@ -149,10 +121,9 @@ export function RedirectsClient({ initialData }: RedirectsClientProps) {
                       <Button
                         variant='ghost'
                         size='icon'
-                        onClick={() => {
-                          setEditingRedirect(redirect);
-                          setIsOpen(true);
-                        }}
+                        onClick={() =>
+                          router.push(`/dashboard/seo/redirects/${redirect.id}`)
+                        }
                       >
                         <Edit className='h-4 w-4' />
                       </Button>

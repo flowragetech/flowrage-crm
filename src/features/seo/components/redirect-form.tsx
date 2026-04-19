@@ -66,6 +66,7 @@ export function RedirectForm({ initialData, onSuccess }: RedirectFormProps) {
       if (result.success) {
         toast.success(values.id ? 'Redirect updated!' : 'Redirect created!');
         form.reset();
+        router.push('/dashboard/seo/redirects');
         router.refresh();
         if (onSuccess) onSuccess();
       } else {

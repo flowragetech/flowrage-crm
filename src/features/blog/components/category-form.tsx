@@ -105,6 +105,7 @@ export function CategoryForm({ initialData, onSuccess }: CategoryFormProps) {
             ? 'Category updated successfully!'
             : 'Category created successfully!'
         );
+        router.push('/dashboard/blog/categories');
         router.refresh();
         onSuccess?.();
       } else {

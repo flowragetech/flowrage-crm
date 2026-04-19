@@ -5,13 +5,6 @@ import { Heading } from '@/components/ui/heading';
 import { Separator } from '@/components/ui/separator';
 import { CategoriesTable } from '@/features/blog/components/categories-table';
 import { CategoryForm } from '@/features/blog/components/category-form';
-import {
-  Drawer,
-  DrawerContent,
-  DrawerDescription,
-  DrawerHeader,
-  DrawerTitle
-} from '@/components/ui/drawer';
 import { deleteCategory } from '@/app/actions/blog';
 import { toast } from 'sonner';
 import {
@@ -25,27 +18,24 @@ import {
   AlertDialogTitle
 } from '@/components/ui/alert-dialog';
 import { Category } from '@prisma/client';
+import { useRouter } from 'next/navigation';
 
 interface CategoriesClientProps {
   initialData: Category[];
 }
 
 export function CategoriesClient({ initialData }: CategoriesClientProps) {
-  const [isOpen, setIsOpen] = React.useState(false);
-  const [selectedCategory, setSelectedCategory] =
-    React.useState<Category | null>(null);
+  const router = useRouter();
   const [isDeleting, setIsDeleting] = React.useState(false);
   const [categoryToDelete, setCategoryToDelete] =
     React.useState<Category | null>(null);
 
   const onAdd = () => {
-    setSelectedCategory(null);
-    setIsOpen(true);
+    router.push('/dashboard/blog/categories/new');
   };
 
   const onEdit = (category: Category) => {
-    setSelectedCategory(category);
-    setIsOpen(true);
+    router.push(`/dashboard/blog/categories/${category.id}`);
   };
 
   const onDelete = (category: Category) => {
@@ -60,6 +50,7 @@ export function CategoriesClient({ initialData }: CategoriesClientProps) {
       const result = await deleteCategory(categoryToDelete.id);
       if (result.success) {
         toast.success('Category deleted successfully');
+        router.refresh();
       } else {
         toast.error(result.error || 'Failed to delete category');
       }
@@ -87,29 +78,6 @@ export function CategoriesClient({ initialData }: CategoriesClientProps) {
         onEdit={onEdit}
         onDelete={onDelete}
       />
-
-      <Drawer open={isOpen} onOpenChange={setIsOpen}>
-        <DrawerContent>
-          <div className='mx-auto w-full max-w-lg'>
-            <DrawerHeader>
-              <DrawerTitle>
-                {selectedCategory ? 'Edit Category' : 'Add New Category'}
-              </DrawerTitle>
-              <DrawerDescription>
-                {selectedCategory
-                  ? 'Update the category name and slug.'
-                  : 'Create a new category for your blog posts.'}
-              </DrawerDescription>
-            </DrawerHeader>
-            <div className='p-4 pb-0'>
-              <CategoryForm
-                initialData={selectedCategory}
-                onSuccess={() => setIsOpen(false)}
-              />
-            </div>
-          </div>
-        </DrawerContent>
-      </Drawer>
 
       <AlertDialog open={isDeleting} onOpenChange={setIsDeleting}>
         <AlertDialogContent>

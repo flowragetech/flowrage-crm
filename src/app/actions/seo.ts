@@ -53,6 +53,19 @@ export async function updateGlobalSeo(values: any) {
   }
 }
 
+export async function getRedirectById(id: string) {
+  try {
+    return await withTimeout(
+      prisma.redirect.findUnique({
+        where: { id }
+      }),
+      10000
+    );
+  } catch (error) {
+    return null;
+  }
+}
+
 export async function getRedirects() {
   try {
     return await withTimeout(

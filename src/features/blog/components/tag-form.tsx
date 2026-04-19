@@ -103,6 +103,7 @@ export function TagForm({ initialData, onSuccess }: TagFormProps) {
         toast.success(
           isEditing ? 'Tag updated successfully!' : 'Tag created successfully!'
         );
+        router.push('/dashboard/blog/tags');
         router.refresh();
         onSuccess?.();
       } else {

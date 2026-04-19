@@ -5,13 +5,6 @@ import { Heading } from '@/components/ui/heading';
 import { Separator } from '@/components/ui/separator';
 import { TagsTable } from '@/features/blog/components/tags-table';
 import { TagForm } from '@/features/blog/components/tag-form';
-import {
-  Drawer,
-  DrawerContent,
-  DrawerDescription,
-  DrawerHeader,
-  DrawerTitle
-} from '@/components/ui/drawer';
 import { deleteTag } from '@/app/actions/blog';
 import { toast } from 'sonner';
 import {
@@ -25,25 +18,23 @@ import {
   AlertDialogTitle
 } from '@/components/ui/alert-dialog';
 import { Tag } from '@prisma/client';
+import { useRouter } from 'next/navigation';
 
 interface TagsClientProps {
   initialData: Tag[];
 }
 
 export function TagsClient({ initialData }: TagsClientProps) {
-  const [isOpen, setIsOpen] = React.useState(false);
-  const [selectedTag, setSelectedTag] = React.useState<Tag | null>(null);
+  const router = useRouter();
   const [isDeleting, setIsDeleting] = React.useState(false);
   const [tagToDelete, setTagToDelete] = React.useState<Tag | null>(null);
 
   const onAdd = () => {
-    setSelectedTag(null);
-    setIsOpen(true);
+    router.push('/dashboard/blog/tags/new');
   };
 
   const onEdit = (tag: Tag) => {
-    setSelectedTag(tag);
-    setIsOpen(true);
+    router.push(`/dashboard/blog/tags/${tag.id}`);
   };
 
   const onDelete = (tag: Tag) => {
@@ -85,29 +76,6 @@ export function TagsClient({ initialData }: TagsClientProps) {
         onEdit={onEdit}
         onDelete={onDelete}
       />
-
-      <Drawer open={isOpen} onOpenChange={setIsOpen}>
-        <DrawerContent>
-          <div className='mx-auto w-full max-w-lg'>
-            <DrawerHeader>
-              <DrawerTitle>
-                {selectedTag ? 'Edit Tag' : 'Add New Tag'}
-              </DrawerTitle>
-              <DrawerDescription>
-                {selectedTag
-                  ? 'Update the tag name and slug.'
-                  : 'Create a new tag for your blog posts.'}
-              </DrawerDescription>
-            </DrawerHeader>
-            <div className='p-4 pb-0'>
-              <TagForm
-                initialData={selectedTag}
-                onSuccess={() => setIsOpen(false)}
-              />
-            </div>
-          </div>
-        </DrawerContent>
-      </Drawer>
 
       <AlertDialog open={isDeleting} onOpenChange={setIsDeleting}>
         <AlertDialogContent>

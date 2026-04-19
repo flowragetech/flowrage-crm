@@ -14,14 +14,6 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table';
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogFooter
-} from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import {
   Select,
@@ -30,7 +22,6 @@ import {
   SelectTrigger,
   SelectValue
 } from '@/components/ui/select';
-import { Switch } from '@/components/ui/switch';
 import { format } from 'date-fns';
 import { Plus, Pencil, Trash2 } from 'lucide-react';
 import { toast } from 'sonner';
@@ -46,12 +37,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger
 } from '@/components/ui/alert-dialog';
-import {
-  createUser,
-  updateUser,
-  deleteUser,
-  getUsersPage
-} from '@/app/actions/users';
+import { updateUser, deleteUser, getUsersPage } from '@/app/actions/users';
 
 type UserRole =
   | 'SUPER_ADMIN'
@@ -77,15 +63,7 @@ interface UsersClientProps {
 
 export function UsersClient({ initialData }: UsersClientProps) {
   const router = useRouter();
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [editingUser, setEditingUser] = useState<AdminUser | null>(null);
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [bulkDeleting, setBulkDeleting] = useState(false);
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [password, setPassword] = useState('');
-  const [role, setRole] = useState<UserRole>('VIEWER');
-  const [isActive, setIsActive] = useState(true);
   const [search, setSearch] = useState('');
   const [roleFilter, setRoleFilter] = useState<UserRole | 'ALL'>('ALL');
   const [selected, setSelected] = useState<Record<string, boolean>>({});
@@ -95,24 +73,12 @@ export function UsersClient({ initialData }: UsersClientProps) {
   const [total, setTotal] = useState(initialData.length);
   const [loadingPage, setLoadingPage] = useState(false);
 
-  const openCreateDialog = () => {
-    setEditingUser(null);
-    setEmail('');
-    setName('');
-    setPassword('');
-    setRole('VIEWER');
-    setIsActive(true);
-    setIsDialogOpen(true);
+  const onAdd = () => {
+    router.push('/dashboard/users/new');
   };
 
-  const openEditDialog = (user: AdminUser) => {
-    setEditingUser(user);
-    setEmail(user.email);
-    setName(user.name || '');
-    setPassword('');
-    setRole(user.role);
-    setIsActive(user.isActive);
-    setIsDialogOpen(true);
+  const onEdit = (user: AdminUser) => {
+    router.push(`/dashboard/users/${user.id}`);
   };
 
   const toggleActiveInline = async (user: AdminUser) => {
@@ -192,60 +158,6 @@ export function UsersClient({ initialData }: UsersClientProps) {
     }
   };
 
-  const handleSubmit = async () => {
-    if (!email) {
-      toast.error('Email is required');
-      return;
-    }
-
-    if (!editingUser && !password) {
-      toast.error('Password is required for new users');
-      return;
-    }
-
-    try {
-      setIsSubmitting(true);
-
-      if (editingUser) {
-        const result = await updateUser(editingUser.id, {
-          email,
-          name: name || undefined,
-          role,
-          isActive,
-          password: password || undefined
-        });
-
-        if (result.success) {
-          toast.success('User updated');
-          setIsDialogOpen(false);
-          router.refresh();
-        } else {
-          toast.error(result.error || 'Failed to update user');
-        }
-      } else {
-        const result = await createUser({
-          email,
-          name: name || undefined,
-          password,
-          role,
-          isActive
-        });
-
-        if (result.success) {
-          toast.success('User created');
-          setIsDialogOpen(false);
-          router.refresh();
-        } else {
-          toast.error(result.error || 'Failed to create user');
-        }
-      }
-    } catch {
-      toast.error('Something went wrong');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   const handleDelete = async (id: string) => {
     try {
       const result = await deleteUser(id);
@@ -273,7 +185,7 @@ export function UsersClient({ initialData }: UsersClientProps) {
     <div className='space-y-4'>
       <div className='flex items-start justify-between'>
         <Heading
-          title={`Users (${initialData.length})`}
+          title={`Users (${total})`}
           description='Manage admin users, roles, and access to the dashboard.'
         />
         <div className='flex gap-2'>
@@ -303,7 +215,7 @@ export function UsersClient({ initialData }: UsersClientProps) {
           <Button variant='outline' onClick={() => fetchPage(1, limit)}>
             Apply
           </Button>
-          <Button onClick={openCreateDialog}>
+          <Button onClick={onAdd}>
             <Plus className='mr-2 h-4 w-4' />
             Add User
           </Button>
@@ -353,7 +265,7 @@ export function UsersClient({ initialData }: UsersClientProps) {
           <TableBody>
             {filtered.length === 0 ? (
               <TableRow>
-                <TableCell colSpan={6} className='h-24 text-center'>
+                <TableCell colSpan={7} className='h-24 text-center'>
                   {loadingPage ? 'Loading...' : 'No users found.'}
                 </TableCell>
               </TableRow>
@@ -396,7 +308,7 @@ export function UsersClient({ initialData }: UsersClientProps) {
                       <Button
                         variant='ghost'
                         size='icon'
-                        onClick={() => openEditDialog(user)}
+                        onClick={() => onEdit(user)}
                       >
                         <Pencil className='h-4 w-4' />
                       </Button>
@@ -474,128 +386,6 @@ export function UsersClient({ initialData }: UsersClientProps) {
           </Button>
         </div>
       </div>
-
-      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>
-              {editingUser ? 'Edit User' : 'Add New User'}
-            </DialogTitle>
-            <DialogDescription>
-              {editingUser
-                ? 'Update user details, role, and status.'
-                : 'Create a new user account for the admin panel.'}
-            </DialogDescription>
-          </DialogHeader>
-          <div className='space-y-4'>
-            <div className='space-y-2'>
-              <label className='text-sm font-medium'>Email</label>
-              <Input
-                type='email'
-                placeholder='user@example.com'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div className='space-y-2'>
-              <label className='text-sm font-medium'>Name</label>
-              <Input
-                placeholder='User name'
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-            <div className='space-y-2'>
-              <label className='text-sm font-medium'>
-                {editingUser ? 'New Password (optional)' : 'Password'}
-              </label>
-              <Input
-                type='password'
-                placeholder={editingUser ? 'Leave blank to keep unchanged' : ''}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-            <div className='grid grid-cols-2 gap-4'>
-              <div className='space-y-2'>
-                <label className='text-sm font-medium'>Role</label>
-                <Select
-                  value={role}
-                  onValueChange={(value) => setRole(value as UserRole)}
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder='Select role' />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value='SUPER_ADMIN'>Super Admin</SelectItem>
-                    <SelectItem value='ADMIN'>Admin</SelectItem>
-                    <SelectItem value='EDITOR'>Editor</SelectItem>
-                    <SelectItem value='AUTHOR'>Author</SelectItem>
-                    <SelectItem value='CUSTOMER'>Customer</SelectItem>
-                    <SelectItem value='VIEWER'>Viewer</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className='flex items-center justify-between rounded-lg border p-3'>
-                <div className='space-y-0.5'>
-                  <p className='text-sm font-medium'>Active</p>
-                  <p className='text-muted-foreground text-xs'>
-                    Controls whether the user can sign in.
-                  </p>
-                </div>
-                <Switch checked={isActive} onCheckedChange={setIsActive} />
-              </div>
-            </div>
-          </div>
-          <DialogFooter className='mt-4'>
-            {editingUser && editingUser.role !== 'SUPER_ADMIN' && (
-              <AlertDialog>
-                <AlertDialogTrigger asChild>
-                  <Button type='button' variant='destructive'>
-                    Delete
-                  </Button>
-                </AlertDialogTrigger>
-                <AlertDialogContent>
-                  <AlertDialogHeader>
-                    <AlertDialogTitle>Delete this user?</AlertDialogTitle>
-                    <AlertDialogDescription>
-                      This action cannot be undone and will remove access for
-                      this user.
-                    </AlertDialogDescription>
-                  </AlertDialogHeader>
-                  <AlertDialogFooter>
-                    <AlertDialogCancel>Cancel</AlertDialogCancel>
-                    <AlertDialogAction
-                      onClick={() => handleDelete(editingUser.id)}
-                      className='bg-destructive text-destructive-foreground hover:bg-destructive/90'
-                    >
-                      Delete
-                    </AlertDialogAction>
-                  </AlertDialogFooter>
-                </AlertDialogContent>
-              </AlertDialog>
-            )}
-            <Button
-              type='button'
-              variant='outline'
-              onClick={() => setIsDialogOpen(false)}
-            >
-              Cancel
-            </Button>
-            <Button
-              type='button'
-              onClick={handleSubmit}
-              disabled={isSubmitting}
-            >
-              {isSubmitting
-                ? 'Saving...'
-                : editingUser
-                  ? 'Save Changes'
-                  : 'Create User'}
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 }
