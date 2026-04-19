@@ -1,0 +1,2014 @@
+
+> flowrage-crm-core@1.0.0 dev
+> next dev -p 3000
+
+▲ Next.js 16.1.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.88:3000
+- Environments: .env.local, .env
+- Experiments (use with caution):
+  · clientTraceMetadata
+
+✓ Starting...
+Creating turbopack project { dir: 'D:\\CRM\\flowrage-crm', testMode: true }
+✓ Ready in 2.5s
+○ Compiling /login ...
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'D:\CRM'
+    [2m[at finishWithoutResolve (D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:565:18)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:657:14][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at D:\CRM\flowrage-crm\node_modules\enhanced-resolve\lib\Resolver.js:718:5][0m
+    [2m[at eval (eval at create (D:\CRM\flowrage-crm\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'D:\\CRM'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in D:\\CRM or above\n' +
+    '  resolve as module\n' +
+    "    D:\\CRM\\node_modules doesn't exist or is not a directory\n" +
+    "    D:\\node_modules doesn't exist or is not a directory"
+}
+[?25h

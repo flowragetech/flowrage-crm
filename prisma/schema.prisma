@@ -1,0 +1,424 @@
+generator client {
+  provider   = "prisma-client-js"
+  engineType = "library"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model SeoMetadata {
+  id              String              @id @default(cuid())
+  metaTitle       String?
+  metaDescription String?
+  keywords        String?
+  focusKeyword    String?
+  ogImage         String?
+  canonical       String?
+  canonicalUrl    String?
+  schemaMarkup    String?
+  schemaJson      Json?
+  createdAt       DateTime            @default(now())
+  updatedAt       DateTime            @updatedAt
+  blogPosts       BlogPost[]
+  categories      Category[]
+  homepage        Homepage?
+  pages           Page[]
+  portfolios      Portfolio[]
+  reusableBlocks  ReusableComponent[]
+  services        Service[]
+  staticPages     StaticPage[]
+  tags            Tag[]
+  teamPage        TeamPage?
+}
+
+model Page {
+  id            String        @id @default(cuid())
+  title         String
+  slug          String        @unique
+  excerpt       String?
+  content       String?
+  template      String        @default("default")
+  status        String        @default("draft")
+  seoMetadataId String?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  seoMetadata   SeoMetadata?  @relation(fields: [seoMetadataId], references: [id])
+  sections      PageSection[]
+}
+
+model PageSection {
+  id        String   @id @default(cuid())
+  pageId    String
+  type      String
+  title     String?
+  settings  Json?
+  content   Json?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  page      Page     @relation(fields: [pageId], references: [id], onDelete: Cascade)
+}
+
+model ReusableComponent {
+  id            String       @id @default(cuid())
+  name          String
+  slug          String       @unique
+  type          String
+  schema        Json?
+  payload       Json?
+  seoMetadataId String?
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  seoMetadata   SeoMetadata? @relation(fields: [seoMetadataId], references: [id])
+}
+
+model BlogPost {
+  id            String         @id @default(cuid())
+  title         String
+  slug          String         @unique
+  content       String
+  excerpt       String?
+  featuredImage String?
+  faq           String?
+  authorId      String
+  published     Boolean        @default(false)
+  seoMetadataId String?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  seoMetadata   SeoMetadata?   @relation(fields: [seoMetadataId], references: [id])
+  categories    Category[]   @relation("BlogPostToCategory")
+  tags          Tag[]        @relation("BlogPostToTag")
+}
+
+model SiteSettings {
+  id                String   @id @default(cuid())
+  siteName          String   @default("CRM Core")
+  logo              String?
+  favicon           String?
+  primaryColor      String?
+  secondaryColor    String?
+  contactInfo       String?
+  socialLinks       String?
+  currencyCode      String?
+  currencySymbol    String?
+  siteDescription   String?
+  smtpSettings      String?
+  footerData        String?
+  headerData        String?
+  featureFlags      String?
+  moduleSettings    String?
+  sitemapConfig     String?
+  imageSeoConfig    String?
+  aiConfig          String?
+  indexingConfig    String?
+  localSeoConfig    String?
+  roleManagerConfig String?
+  analyticsConfig   String?
+  updatedAt         DateTime @updatedAt
+}
+
+model NotFoundLog {
+  id           String   @id @default(cuid())
+  url          String   @unique
+  userAgent    String?
+  referer      String?
+  hits         Int      @default(1)
+  lastAccessed DateTime @default(now())
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Inquiry {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String?
+  message   String
+  status    String   @default("unread")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model GlobalSeo {
+  id                     String   @id @default(cuid())
+  defaultMetaTitle       String?
+  defaultMetaDescription String?
+  ogSiteName             String?
+  ogImage                String?
+  twitterHandle          String?
+  googleAnalyticsId      String?
+  googleSearchConsoleId  String?
+  bingWebmasterId        String?
+  schemaMarkup           String?
+  schemaJson             Json?
+  updatedAt              DateTime @updatedAt
+}
+
+model Redirect {
+  id          String   @id @default(cuid())
+  source      String   @unique
+  destination String
+  statusCode  Int      @default(301)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model MediaFolder {
+  id        String        @id @default(cuid())
+  name      String
+  slug      String        @unique
+  parentId  String?
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  parent    MediaFolder?  @relation("MediaFolderTree", fields: [parentId], references: [id])
+  children  MediaFolder[] @relation("MediaFolderTree")
+  media     Media[]
+}
+
+model MediaTag {
+  id        String   @id @default(cuid())
+  name      String
+  slug      String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  media     Media[]
+}
+
+model Media {
+  id          String       @id @default(cuid())
+  name        String
+  url         String
+  key         String       @unique
+  size        Int
+  type        String
+  width       Int?
+  height      Int?
+  altText     String?
+  caption     String?
+  description String?
+  folderId    String?
+  folder      MediaFolder? @relation(fields: [folderId], references: [id])
+  tags        MediaTag[]
+  category    String?      @default("uncategorized")
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+model Homepage {
+  id            String      @id @default(cuid())
+  heroTitle     String
+  heroSubtitle  String
+  heroImage     String?
+  features      String?
+  testimonials  String?
+  stats         String?
+  faq           String?
+  seoMetadataId String      @unique
+  updatedAt     DateTime    @updatedAt
+  seoMetadata   SeoMetadata @relation(fields: [seoMetadataId], references: [id])
+}
+
+model ServiceCategory {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  description String?
+  icon        String?
+  order       Int       @default(0)
+  services    Service[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Service {
+  id            String           @id @default(cuid())
+  name          String
+  slug          String           @unique
+  description   String
+  icon          String?
+  image         String?
+  content       String?
+  features      String?
+  order         Int              @default(0)
+  categoryId    String?
+  category      ServiceCategory? @relation(fields: [categoryId], references: [id])
+  seoMetadataId String
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+  seoMetadata   SeoMetadata      @relation(fields: [seoMetadataId], references: [id])
+}
+
+model Portfolio {
+  id            String      @id @default(cuid())
+  title         String
+  slug          String      @unique
+  client        String?
+  description   String
+  image         String?
+  content       String?
+  seoMetadataId String
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  seoMetadata   SeoMetadata @relation(fields: [seoMetadataId], references: [id])
+}
+
+model Category {
+  id            String       @id @default(cuid())
+  name          String
+  slug          String       @unique
+  seoMetadataId String?
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  seoMetadata   SeoMetadata? @relation(fields: [seoMetadataId], references: [id])
+  posts         BlogPost[]   @relation("BlogPostToCategory")
+}
+
+model Tag {
+  id            String       @id @default(cuid())
+  name          String
+  seoMetadataId String?
+  slug          String       @unique
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  seoMetadata   SeoMetadata? @relation(fields: [seoMetadataId], references: [id])
+  posts         BlogPost[]   @relation("BlogPostToTag")
+}
+
+model StaticPage {
+  id            String      @id @default(cuid())
+  title         String
+  slug          String      @unique
+  content       String
+  seoMetadataId String
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  seoMetadata   SeoMetadata @relation(fields: [seoMetadataId], references: [id])
+}
+
+model TeamPage {
+  id              String      @id @default(cuid())
+  heroTitle       String
+  heroHighlight   String?
+  heroSubtitle    String?
+  heroDescription String?
+  introTitle      String?
+  introBody       String?
+  sections        String?
+  seoMetadataId   String      @unique
+  updatedAt       DateTime    @updatedAt
+  seoMetadata     SeoMetadata @relation(fields: [seoMetadataId], references: [id])
+}
+
+model TeamMember {
+  id          String   @id @default(cuid())
+  name        String
+  role        String
+  slug        String   @unique
+  shortBio    String?
+  fullBio     String?
+  photo       String?
+  expertise   String?
+  experience  String?
+  ordering    Int      @default(0)
+  socialLinks String?
+  isFeatured  Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Deal {
+  id            String   @id @default(cuid())
+  name          String
+  email         String?
+  status        String   @default("new")
+  value         Float    @default(0)
+  pipelineStage String   @default("new-business")
+  customFields  Json?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Order {
+  id            String   @id @default(cuid())
+  name          String?
+  email         String?
+  phone         String?
+  service       String
+  plan          String
+  currency      String
+  monthlyTotal  Float
+  termMonths    Int
+  contractTotal Float
+  status        String   @default("new")
+  details       String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  passwordHash  String
+  role          Role      @default(VIEWER)
+  isActive      Boolean   @default(true)
+  isSystemAdmin Boolean   @default(false)
+  tenantId      String?
+  appRoleId     String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  appRole       AppRole?  @relation(fields: [appRoleId], references: [id])
+  tenant        Tenant?   @relation(fields: [tenantId], references: [id])
+  sessions      Session[]
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  createdAt    DateTime @default(now())
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Tenant {
+  id        String   @id @default(cuid())
+  name      String
+  slug      String   @unique
+  isDefault Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  users     User[]
+}
+
+model AppRole {
+  id          String       @id @default(cuid())
+  key         String       @unique
+  name        String
+  isSystem    Boolean      @default(false)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  permissions Permission[]
+  users       User[]
+}
+
+model Permission {
+  id        String    @id @default(cuid())
+  key       String    @unique
+  label     String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  roles     AppRole[]
+}
+
+enum Role {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+  AUTHOR
+  CUSTOMER
+  VIEWER
+}

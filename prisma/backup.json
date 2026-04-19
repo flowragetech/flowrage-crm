@@ -1,0 +1,327 @@
+{
+  "seoMetadata": [
+    {
+      "id": "cmkv10udw0001np8vga33cxnl",
+      "metaTitle": "SEO Optimization Services",
+      "metaDescription": "Expert SEO services to grow your business.",
+      "keywords": null,
+      "ogImage": null,
+      "canonical": null,
+      "schemaMarkup": null,
+      "createdAt": "2026-01-26T10:30:27.284Z",
+      "updatedAt": "2026-01-26T10:30:27.284Z"
+    },
+    {
+      "id": "cml7x4w1y0003n5n2bc3qy1lm",
+      "metaTitle": "",
+      "metaDescription": "",
+      "keywords": "",
+      "ogImage": "",
+      "canonical": "",
+      "schemaMarkup": null,
+      "createdAt": "2026-02-04T11:02:37.894Z",
+      "updatedAt": "2026-02-05T09:32:24.218Z"
+    },
+    {
+      "id": "cml7ythxa000nn5n22cczvzfi",
+      "metaTitle": "",
+      "metaDescription": "",
+      "keywords": "",
+      "ogImage": "",
+      "canonical": "",
+      "schemaMarkup": null,
+      "createdAt": "2026-02-04T11:49:45.597Z",
+      "updatedAt": "2026-02-04T12:06:15.903Z"
+    }
+  ],
+  "serviceCategory": [],
+  "user": [
+    {
+      "id": "cmkv10ula0002np8v8ltk6jbq",
+      "email": "admin@flowrage.local",
+      "name": "Super Admin",
+      "passwordHash": "$2a$12$laE7/RkTZu4BHgtCukFcd.0idiE9SrVf/ENerQXgq.LWpNPfCXWaa",
+      "role": "SUPER_ADMIN",
+      "isActive": true,
+      "createdAt": "2026-01-26T10:30:27.551Z",
+      "updatedAt": "2026-01-26T10:30:27.551Z"
+    },
+    {
+      "id": "cmkv1f3qa00007z0nk50ixlej",
+      "email": "sushantkarn7759@gmail.com",
+      "name": "Super Admin",
+      "passwordHash": "$2a$12$KlaEmoCg8j.DV94EFAVd6.hFuI8yzyfs4DvIHBYpqe/6UJZGzHwqK",
+      "role": "SUPER_ADMIN",
+      "isActive": true,
+      "createdAt": "2026-01-26T10:41:32.579Z",
+      "updatedAt": "2026-01-26T10:41:32.579Z"
+    }
+  ],
+  "expertSupportOption": [
+    {
+      "id": "cml9bb75e0007mn2p0z3uw823",
+      "code": "SEOExpert",
+      "name": "SEO Expert",
+      "role": "SEO Expert",
+      "ratePerHour": 40,
+      "isActive": true,
+      "ordering": 1,
+      "createdAt": "2026-02-05T10:27:13.010Z",
+      "updatedAt": "2026-02-05T10:27:13.010Z"
+    },
+    {
+      "id": "cml9bbn8l0008mn2p9qrem0kw",
+      "code": "WebDeveloper",
+      "name": "Web Developer",
+      "role": "Web Developer",
+      "ratePerHour": 100,
+      "isActive": true,
+      "ordering": 2,
+      "createdAt": "2026-02-05T10:27:33.861Z",
+      "updatedAt": "2026-02-05T10:27:33.861Z"
+    }
+  ],
+  "reportingOption": [
+    {
+      "id": "cml9caz2b0000e4fjysx9qplb",
+      "code": "monthly",
+      "label": "Monthly Reporting",
+      "description": "Comprehensive monthly performance reports",
+      "monthlyCost": 0,
+      "isActive": true,
+      "ordering": 1,
+      "createdAt": "2026-02-05T10:55:02.147Z",
+      "updatedAt": "2026-02-05T10:55:02.147Z"
+    },
+    {
+      "id": "cml9caz2f0001e4fjhnf0xbz6",
+      "code": "bi-weekly",
+      "label": "Bi-Weekly Reporting",
+      "description": "Updates every two weeks",
+      "monthlyCost": 200,
+      "isActive": true,
+      "ordering": 2,
+      "createdAt": "2026-02-05T10:55:02.152Z",
+      "updatedAt": "2026-02-05T10:55:02.152Z"
+    },
+    {
+      "id": "cml9caz2k0002e4fj46pql5jf",
+      "code": "weekly",
+      "label": "Weekly Reporting",
+      "description": "Detailed weekly updates and strategy calls",
+      "monthlyCost": 500,
+      "isActive": true,
+      "ordering": 3,
+      "createdAt": "2026-02-05T10:55:02.156Z",
+      "updatedAt": "2026-02-05T10:55:02.156Z"
+    }
+  ],
+  "siteSettings": [
+    {
+      "id": "cml9dhyqg0000zxptbbp00zdd",
+      "siteName": "Flowrage",
+      "logo": null,
+      "favicon": null,
+      "contactInfo": null,
+      "socialLinks": null,
+      "currencyCode": null,
+      "currencySymbol": null,
+      "siteDescription": null,
+      "smtpSettings": null,
+      "footerData": "{\"description\":\"Flowrage is a premier digital agency in Nepal that empowers brands with data-driven marketing and innovative technology. We help local and global businesses scale their online presence and achieve measurable growth.\",\"copyrightText\":\"© 2026 Flowrage. All rights reserved.\",\"columns\":[{\"title\":\"Services\",\"links\":[{\"label\":\"Website Development\",\"href\":\"/services\"},{\"label\":\"Search Engine Optimization\",\"href\":\"/services\"},{\"label\":\"Digital Marketing\",\"href\":\"/services\"},{\"label\":\"Pay-Per-Click Advertising\",\"href\":\"/services\"},{\"label\":\"Social Media Marketing\",\"href\":\"/services\"},{\"label\":\"Email Marketing\",\"href\":\"/services\"}]},{\"title\":\"Training\",\"links\":[{\"label\":\"SEO Training\",\"href\":\"/training\"},{\"label\":\"Digital Marketing Training\",\"href\":\"/training\"}]},{\"title\":\"Company\",\"links\":[{\"label\":\"About Us\",\"href\":\"/about\"},{\"label\":\"Contact\",\"href\":\"/contact\"},{\"label\":\"Privacy Policy\",\"href\":\"/privacy-policy\"},{\"label\":\"Terms of Service\",\"href\":\"/terms-of-service\"}]}]}",
+      "headerData": null,
+      "sitemapConfig": null,
+      "imageSeoConfig": null,
+      "aiConfig": null,
+      "indexingConfig": null,
+      "localSeoConfig": null,
+      "roleManagerConfig": null,
+      "analyticsConfig": null,
+      "updatedAt": "2026-02-05T11:47:39.211Z"
+    }
+  ],
+  "notFoundLog": [],
+  "inquiry": [
+    {
+      "id": "cml9av9hz0005mn2pgorwgad0",
+      "name": "PRAVESH KUMAR JHA",
+      "email": "abhijeetlyff@gmail.com",
+      "subject": "Budget: < $1,000 | Mobile: 9876543210",
+      "message": "web dev adsfaergfdgfdgszvccv",
+      "status": "unread",
+      "createdAt": "2026-02-05T10:14:49.560Z",
+      "updatedAt": "2026-02-05T10:14:49.560Z"
+    }
+  ],
+  "globalSeo": [],
+  "redirect": [],
+  "media": [
+    {
+      "id": "cml7x906z0004n5n2e8ko6xw5",
+      "name": "hero-img-500kb.jpg",
+      "url": "/uploads/60ff06e8-cfca-4a25-b590-a913bd0daf83.jpg",
+      "key": "media-1770203149854-hero-img-500kb.jpg",
+      "size": 199926,
+      "type": "image/jpeg",
+      "width": 1200,
+      "height": 800,
+      "altText": "Abhijeet Mishra",
+      "caption": null,
+      "description": null,
+      "category": "uncategorized",
+      "createdAt": "2026-02-04T11:05:49.883Z",
+      "updatedAt": "2026-02-04T11:06:06.044Z"
+    },
+    {
+      "id": "cml7zelo1000on5n2ca0tal13",
+      "name": "1769704642650.jpg",
+      "url": "/uploads/72ea85f6-ef9b-4188-b8e1-775d6dda999d.jpg",
+      "key": "media-1770206770195-1769704642650.jpg",
+      "size": 85983,
+      "type": "image/jpeg",
+      "width": 1200,
+      "height": 800,
+      "altText": null,
+      "caption": null,
+      "description": null,
+      "category": "uncategorized",
+      "createdAt": "2026-02-04T12:06:10.225Z",
+      "updatedAt": "2026-02-04T12:06:10.225Z"
+    }
+  ],
+  "order": [
+    {
+      "id": "cml9a2rvl0004mn2p5tpm46hr",
+      "name": "PRAVESH KUMAR JHA",
+      "email": "dsfwksn@rrtrt4r.com",
+      "phone": null,
+      "service": "seo",
+      "plan": "Standard",
+      "currency": "INR",
+      "monthlyTotal": 34000,
+      "termMonths": 1,
+      "contractTotal": 34000,
+      "status": "converted",
+      "details": "{\"0\":\"{\",\"1\":\"\\\"\",\"2\":\"s\",\"3\":\"e\",\"4\":\"r\",\"5\":\"v\",\"6\":\"i\",\"7\":\"c\",\"8\":\"e\",\"9\":\"\\\"\",\"10\":\":\",\"11\":\"\\\"\",\"12\":\"s\",\"13\":\"e\",\"14\":\"o\",\"15\":\"\\\"\",\"16\":\",\",\"17\":\"\\\"\",\"18\":\"p\",\"19\":\"l\",\"20\":\"a\",\"21\":\"n\",\"22\":\"\\\"\",\"23\":\":\",\"24\":\"\\\"\",\"25\":\"S\",\"26\":\"t\",\"27\":\"a\",\"28\":\"n\",\"29\":\"d\",\"30\":\"a\",\"31\":\"r\",\"32\":\"d\",\"33\":\"\\\"\",\"34\":\",\",\"35\":\"\\\"\",\"36\":\"m\",\"37\":\"o\",\"38\":\"n\",\"39\":\"t\",\"40\":\"h\",\"41\":\"l\",\"42\":\"y\",\"43\":\"B\",\"44\":\"a\",\"45\":\"s\",\"46\":\"e\",\"47\":\"\\\"\",\"48\":\":\",\"49\":\"3\",\"50\":\"4\",\"51\":\"0\",\"52\":\"0\",\"53\":\"0\",\"54\":\",\",\"55\":\"\\\"\",\"56\":\"m\",\"57\":\"o\",\"58\":\"n\",\"59\":\"t\",\"60\":\"h\",\"61\":\"l\",\"62\":\"y\",\"63\":\"R\",\"64\":\"e\",\"65\":\"p\",\"66\":\"o\",\"67\":\"r\",\"68\":\"t\",\"69\":\"i\",\"70\":\"n\",\"71\":\"g\",\"72\":\"\\\"\",\"73\":\":\",\"74\":\"0\",\"75\":\",\",\"76\":\"\\\"\",\"77\":\"e\",\"78\":\"x\",\"79\":\"p\",\"80\":\"e\",\"81\":\"r\",\"82\":\"t\",\"83\":\"M\",\"84\":\"o\",\"85\":\"n\",\"86\":\"t\",\"87\":\"h\",\"88\":\"l\",\"89\":\"y\",\"90\":\"T\",\"91\":\"o\",\"92\":\"t\",\"93\":\"a\",\"94\":\"l\",\"95\":\"\\\"\",\"96\":\":\",\"97\":\"0\",\"98\":\",\",\"99\":\"\\\"\",\"100\":\"r\",\"101\":\"e\",\"102\":\"p\",\"103\":\"o\",\"104\":\"r\",\"105\":\"t\",\"106\":\"i\",\"107\":\"n\",\"108\":\"g\",\"109\":\"I\",\"110\":\"d\",\"111\":\"\\\"\",\"112\":\":\",\"113\":\"\\\"\",\"114\":\"m\",\"115\":\"o\",\"116\":\"n\",\"117\":\"t\",\"118\":\"h\",\"119\":\"l\",\"120\":\"y\",\"121\":\"\\\"\",\"122\":\",\",\"123\":\"\\\"\",\"124\":\"r\",\"125\":\"e\",\"126\":\"p\",\"127\":\"o\",\"128\":\"r\",\"129\":\"t\",\"130\":\"i\",\"131\":\"n\",\"132\":\"g\",\"133\":\"L\",\"134\":\"a\",\"135\":\"b\",\"136\":\"e\",\"137\":\"l\",\"138\":\"\\\"\",\"139\":\":\",\"140\":\"\\\"\",\"141\":\"M\",\"142\":\"o\",\"143\":\"n\",\"144\":\"t\",\"145\":\"h\",\"146\":\"l\",\"147\":\"y\",\"148\":\" \",\"149\":\"r\",\"150\":\"e\",\"151\":\"p\",\"152\":\"o\",\"153\":\"r\",\"154\":\"t\",\"155\":\"i\",\"156\":\"n\",\"157\":\"g\",\"158\":\"\\\"\",\"159\":\",\",\"160\":\"\\\"\",\"161\":\"s\",\"162\":\"e\",\"163\":\"l\",\"164\":\"e\",\"165\":\"c\",\"166\":\"t\",\"167\":\"e\",\"168\":\"d\",\"169\":\"E\",\"170\":\"x\",\"171\":\"p\",\"172\":\"e\",\"173\":\"r\",\"174\":\"t\",\"175\":\"s\",\"176\":\"\\\"\",\"177\":\":\",\"178\":\"[\",\"179\":\"]\",\"180\":\",\",\"181\":\"\\\"\",\"182\":\"t\",\"183\":\"e\",\"184\":\"r\",\"185\":\"m\",\"186\":\"\\\"\",\"187\":\":\",\"188\":\"{\",\"189\":\"\\\"\",\"190\":\"i\",\"191\":\"d\",\"192\":\"\\\"\",\"193\":\":\",\"194\":\"\\\"\",\"195\":\"1\",\"196\":\"\\\"\",\"197\":\",\",\"198\":\"\\\"\",\"199\":\"l\",\"200\":\"a\",\"201\":\"b\",\"202\":\"e\",\"203\":\"l\",\"204\":\"\\\"\",\"205\":\":\",\"206\":\"\\\"\",\"207\":\"1\",\"208\":\" \",\"209\":\"M\",\"210\":\"o\",\"211\":\"n\",\"212\":\"t\",\"213\":\"h\",\"214\":\"\\\"\",\"215\":\",\",\"216\":\"\\\"\",\"217\":\"m\",\"218\":\"o\",\"219\":\"n\",\"220\":\"t\",\"221\":\"h\",\"222\":\"s\",\"223\":\"\\\"\",\"224\":\":\",\"225\":\"1\",\"226\":\"}\",\"227\":\",\",\"228\":\"\\\"\",\"229\":\"p\",\"230\":\"r\",\"231\":\"o\",\"232\":\"j\",\"233\":\"e\",\"234\":\"c\",\"235\":\"t\",\"236\":\"\\\"\",\"237\":\":\",\"238\":\"{\",\"239\":\"\\\"\",\"240\":\"c\",\"241\":\"o\",\"242\":\"m\",\"243\":\"p\",\"244\":\"a\",\"245\":\"n\",\"246\":\"y\",\"247\":\"N\",\"248\":\"a\",\"249\":\"m\",\"250\":\"e\",\"251\":\"\\\"\",\"252\":\":\",\"253\":\"\\\"\",\"254\":\"6\",\"255\":\"y\",\"256\":\"h\",\"257\":\"7\",\"258\":\"y\",\"259\":\"h\",\"260\":\"\\\"\",\"261\":\",\",\"262\":\"\\\"\",\"263\":\"w\",\"264\":\"e\",\"265\":\"b\",\"266\":\"s\",\"267\":\"i\",\"268\":\"t\",\"269\":\"e\",\"270\":\"U\",\"271\":\"r\",\"272\":\"l\",\"273\":\"\\\"\",\"274\":\":\",\"275\":\"\\\"\",\"276\":\"e\",\"277\":\"r\",\"278\":\"j\",\"279\":\"3\",\"280\":\"4\",\"281\":\"b\",\"282\":\"t\",\"283\":\"\\\"\",\"284\":\",\",\"285\":\"\\\"\",\"286\":\"s\",\"287\":\"u\",\"288\":\"m\",\"289\":\"m\",\"290\":\"a\",\"291\":\"r\",\"292\":\"y\",\"293\":\"\\\"\",\"294\":\":\",\"295\":\"\\\"\",\"296\":\"e\",\"297\":\"g\",\"298\":\"d\",\"299\":\"f\",\"300\":\"g\",\"301\":\"r\",\"302\":\"e\",\"303\":\"g\",\"304\":\"\\\"\",\"305\":\",\",\"306\":\"\\\"\",\"307\":\"g\",\"308\":\"o\",\"309\":\"a\",\"310\":\"l\",\"311\":\"\\\"\",\"312\":\":\",\"313\":\"\\\"\",\"314\":\"r\",\"315\":\"e\",\"316\":\"r\",\"317\":\"t\",\"318\":\"t\",\"319\":\"\\\"\",\"320\":\",\",\"321\":\"\\\"\",\"322\":\"b\",\"323\":\"u\",\"324\":\"d\",\"325\":\"g\",\"326\":\"e\",\"327\":\"t\",\"328\":\"\\\"\",\"329\":\":\",\"330\":\"\\\"\",\"331\":\"r\",\"332\":\"e\",\"333\":\"r\",\"334\":\"e\",\"335\":\"r\",\"336\":\"e\",\"337\":\"8\",\"338\":\"t\",\"339\":\"4\",\"340\":\"\\\"\",\"341\":\",\",\"342\":\"\\\"\",\"343\":\"t\",\"344\":\"i\",\"345\":\"m\",\"346\":\"e\",\"347\":\"l\",\"348\":\"i\",\"349\":\"n\",\"350\":\"e\",\"351\":\"\\\"\",\"352\":\":\",\"353\":\"\\\"\",\"354\":\"r\",\"355\":\"e\",\"356\":\"r\",\"357\":\"e\",\"358\":\"t\",\"359\":\"e\",\"360\":\"\\\"\",\"361\":\",\",\"362\":\"\\\"\",\"363\":\"a\",\"364\":\"u\",\"365\":\"d\",\"366\":\"i\",\"367\":\"e\",\"368\":\"n\",\"369\":\"c\",\"370\":\"e\",\"371\":\"\\\"\",\"372\":\":\",\"373\":\"\\\"\",\"374\":\"r\",\"375\":\"e\",\"376\":\"f\",\"377\":\"w\",\"378\":\"r\",\"379\":\"e\",\"380\":\"t\",\"381\":\"g\",\"382\":\"\\\"\",\"383\":\"}\",\"384\":\",\",\"385\":\"\\\"\",\"386\":\"d\",\"387\":\"i\",\"388\":\"s\",\"389\":\"p\",\"390\":\"l\",\"391\":\"a\",\"392\":\"y\",\"393\":\"C\",\"394\":\"u\",\"395\":\"r\",\"396\":\"r\",\"397\":\"e\",\"398\":\"n\",\"399\":\"c\",\"400\":\"y\",\"401\":\"\\\"\",\"402\":\":\",\"403\":\"{\",\"404\":\"\\\"\",\"405\":\"c\",\"406\":\"o\",\"407\":\"d\",\"408\":\"e\",\"409\":\"\\\"\",\"410\":\":\",\"411\":\"\\\"\",\"412\":\"U\",\"413\":\"S\",\"414\":\"D\",\"415\":\"\\\"\",\"416\":\",\",\"417\":\"\\\"\",\"418\":\"s\",\"419\":\"y\",\"420\":\"m\",\"421\":\"b\",\"422\":\"o\",\"423\":\"l\",\"424\":\"\\\"\",\"425\":\":\",\"426\":\"\\\"\",\"427\":\"$\",\"428\":\"\\\"\",\"429\":\",\",\"430\":\"\\\"\",\"431\":\"r\",\"432\":\"a\",\"433\":\"t\",\"434\":\"e\",\"435\":\"\\\"\",\"436\":\":\",\"437\":\"0\",\"438\":\".\",\"439\":\"0\",\"440\":\"1\",\"441\":\"1\",\"442\":\"0\",\"443\":\"6\",\"444\":\",\",\"445\":\"\\\"\",\"446\":\"m\",\"447\":\"o\",\"448\":\"n\",\"449\":\"t\",\"450\":\"h\",\"451\":\"l\",\"452\":\"y\",\"453\":\"T\",\"454\":\"o\",\"455\":\"t\",\"456\":\"a\",\"457\":\"l\",\"458\":\"\\\"\",\"459\":\":\",\"460\":\"3\",\"461\":\"7\",\"462\":\"6\",\"463\":\".\",\"464\":\"0\",\"465\":\"4\",\"466\":\",\",\"467\":\"\\\"\",\"468\":\"c\",\"469\":\"o\",\"470\":\"n\",\"471\":\"t\",\"472\":\"r\",\"473\":\"a\",\"474\":\"c\",\"475\":\"t\",\"476\":\"T\",\"477\":\"o\",\"478\":\"t\",\"479\":\"a\",\"480\":\"l\",\"481\":\"\\\"\",\"482\":\":\",\"483\":\"3\",\"484\":\"7\",\"485\":\"6\",\"486\":\".\",\"487\":\"0\",\"488\":\"4\",\"489\":\"}\",\"490\":\"}\",\"reportingId\":\"monthly\",\"reportingLabel\":\"Monthly reporting\",\"selectedExperts\":[\"seo-expert\",\"web-developer\",\"senior-web-developer\",\"content-strategist\",\"copywriter\",\"blog-writer\",\"social-media-manager\"]}",
+      "createdAt": "2026-02-05T09:52:40.354Z",
+      "updatedAt": "2026-02-05T10:23:27.178Z"
+    },
+    {
+      "id": "cml9b61y50006mn2pwb0nnyjz",
+      "name": "Mr Hriday Narayan Jha",
+      "email": "erefef@dfdsf.com",
+      "phone": null,
+      "service": "seo",
+      "plan": "Standard",
+      "currency": "INR",
+      "monthlyTotal": 34129,
+      "termMonths": 1,
+      "contractTotal": 34129,
+      "status": "converted",
+      "details": "{\"service\":\"seo\",\"plan\":\"Standard\",\"monthlyBase\":34000,\"monthlyReporting\":0,\"expertMonthlyTotal\":129,\"reportingId\":\"monthly\",\"reportingLabel\":\"Monthly reporting\",\"selectedExperts\":[\"ui-ux-designer\",\"copywriter\",\"digital-marketing-expert\",\"ecommerce-specialist\",\"google-ads-specialist\",\"crm-specialist\"],\"term\":{\"id\":\"1\",\"label\":\"1 Month\",\"months\":1},\"project\":{\"companyName\":\"6yh7yh\",\"websiteUrl\":\"erj34bt\",\"summary\":\"egdfgreg\",\"goal\":\"rertt\",\"budget\":\"rerere8t4\",\"timeline\":\"rerete\",\"audience\":\"refwretg\"},\"displayCurrency\":{\"code\":\"USD\",\"symbol\":\"$\",\"rate\":0.01106,\"monthlyTotal\":377.46674,\"contractTotal\":377.46674}}",
+      "createdAt": "2026-02-05T10:23:12.990Z",
+      "updatedAt": "2026-02-05T10:23:25.044Z"
+    }
+  ],
+  "teamMember": [
+    {
+      "id": "cml7ymzxm000ln5n295cdpe5j",
+      "name": "Abhijeet Mishra",
+      "role": "Full Stack Developer",
+      "slug": "abhijeet-mishra",
+      "shortBio": "",
+      "fullBio": "",
+      "photo": "/uploads/60ff06e8-cfca-4a25-b590-a913bd0daf83.jpg",
+      "expertise": "Full Stack Web Development, Frontend Development (React), Backend Development & APIs, System Design & Architecture, Admin Dashboards & Internal Tools, Performance Optimization, Security & Best Practices, UI/UX Implementation, Product Engineering, Scalable Web Applications",
+      "experience": "5+",
+      "ordering": 1,
+      "socialLinks": "{\"linkedin\":\"\",\"twitter\":\"\",\"github\":\"\",\"website\":\"https://abhijeetmishra.netlify.app/\",\"instagram\":\"\"}",
+      "isFeatured": true,
+      "createdAt": "2026-02-04T11:44:42.346Z",
+      "updatedAt": "2026-02-04T11:46:48.237Z"
+    }
+  ],
+  "session": [
+    {
+      "id": "cmkv1gwgg0001itbudmy1jxkv",
+      "sessionToken": "f970513c-bd8c-4d1c-8837-d015e2d90ba8",
+      "userId": "cmkv1f3qa00007z0nk50ixlej",
+      "expires": "2026-02-02T10:42:56.441Z",
+      "createdAt": "2026-01-26T10:42:56.447Z"
+    },
+    {
+      "id": "cml6867wf0001cg7obtwth5z2",
+      "sessionToken": "c62e7d68-6274-4f3c-9464-759ecc2e9e14",
+      "userId": "cmkv1f3qa00007z0nk50ixlej",
+      "expires": "2026-02-10T06:36:03.321Z",
+      "createdAt": "2026-02-03T06:36:03.324Z"
+    },
+    {
+      "id": "cml6870ro0003cg7ov6759qzo",
+      "sessionToken": "003e4f25-9637-4bf7-9f23-b69cf5dc8d78",
+      "userId": "cmkv1f3qa00007z0nk50ixlej",
+      "expires": "2026-02-10T06:36:40.738Z",
+      "createdAt": "2026-02-03T06:36:40.741Z"
+    },
+    {
+      "id": "cml7vwnyu0001n5n2nrwhwrn9",
+      "sessionToken": "a15792b4-4982-4698-8174-01fe11bdf6a0",
+      "userId": "cmkv1f3qa00007z0nk50ixlej",
+      "expires": "2026-02-11T10:28:14.544Z",
+      "createdAt": "2026-02-04T10:28:14.547Z"
+    }
+  ],
+  "category": [],
+  "tag": [],
+  "teamPage": [],
+  "staticPage": [],
+  "portfolio": [
+    {
+      "id": "cml7ythx9000mn5n2wobzb49s",
+      "title": "GMB Ranker – Local SEO Automation Platform",
+      "slug": "gmb-ranker-local-seo-automation-platform",
+      "client": "GMB Ranker (In-House Product)",
+      "description": "A powerful local SEO platform designed to help businesses and agencies track Google Business Profile rankings, manage reviews, generate AI-powered content, and improve visibility on Google Search and Maps.",
+      "image": "/uploads/72ea85f6-ef9b-4188-b8e1-775d6dda999d.jpg",
+      "content": "<p data-start=\"614\" data-end=\"988\"><strong data-start=\"614\" data-end=\"634\">Project Overview</strong><br data-start=\"634\" data-end=\"637\">GMB Ranker is a comprehensive local SEO and Google Business Profile optimization platform built to simplify local search marketing for businesses and agencies. The goal of the project was to create an all-in-one system that provides accurate rank tracking, actionable insights, and automation tools to improve local visibility and customer engagement.</p>\n<hr data-start=\"990\" data-end=\"993\">\n<p data-start=\"995\" data-end=\"1326\"><strong data-start=\"995\" data-end=\"1016\">Problem Statement</strong><br data-start=\"1016\" data-end=\"1019\">Local businesses often struggle with tracking Google Maps rankings, managing reviews, and maintaining an active Google Business Profile. Existing tools were either too complex, expensive, or lacked accurate geo-based data. There was a need for a streamlined platform focused purely on local SEO performance.</p>\n<hr data-start=\"1328\" data-end=\"1331\">\n<p data-start=\"1333\" data-end=\"1638\"><strong data-start=\"1333\" data-end=\"1345\">Solution</strong><br data-start=\"1345\" data-end=\"1348\">GMB Ranker was developed as a centralized dashboard offering grid-based rank tracking, Google Business Profile audits, AI-generated content, review management, and competitor insights. The platform enables users to monitor performance across locations while automating repetitive SEO tasks.</p>\n<hr data-start=\"1640\" data-end=\"1643\">\n<p data-start=\"1645\" data-end=\"1661\"><strong data-start=\"1645\" data-end=\"1661\">Key Features</strong></p>\n<ul data-start=\"1662\" data-end=\"1926\">\n<li data-start=\"1662\" data-end=\"1700\">\n<p data-start=\"1664\" data-end=\"1700\">Geo-grid based local rank tracking</p>\n</li>\n<li data-start=\"1701\" data-end=\"1761\">\n<p data-start=\"1703\" data-end=\"1761\">Google Business Profile audits and optimization insights</p>\n</li>\n<li data-start=\"1762\" data-end=\"1804\">\n<p data-start=\"1764\" data-end=\"1804\">AI-powered post and content generation</p>\n</li>\n<li data-start=\"1805\" data-end=\"1850\">\n<p data-start=\"1807\" data-end=\"1850\">Review monitoring and response management</p>\n</li>\n<li data-start=\"1851\" data-end=\"1881\">\n<p data-start=\"1853\" data-end=\"1881\">Competitor rank comparison</p>\n</li>\n<li data-start=\"1882\" data-end=\"1926\">\n<p data-start=\"1884\" data-end=\"1926\">Free local SEO tools for lead generation</p>\n</li>\n</ul>\n<hr data-start=\"1928\" data-end=\"1931\">\n<p data-start=\"1933\" data-end=\"2283\"><strong data-start=\"1933\" data-end=\"1965\">Development &amp; Implementation</strong><br data-start=\"1965\" data-end=\"1968\">The platform was built with a scalable architecture, focusing on performance, usability, and data accuracy. A clean admin dashboard allows users to manage multiple locations, keywords, and clients efficiently. Special attention was given to UI clarity so even non-technical users can easily understand ranking data.</p>\n<hr data-start=\"2285\" data-end=\"2288\">\n<p data-start=\"2290\" data-end=\"2572\"><strong data-start=\"2290\" data-end=\"2310\">Results &amp; Impact</strong><br data-start=\"2310\" data-end=\"2313\">GMB Ranker helps businesses gain better visibility on Google Search and Maps, save time through automation, and make informed SEO decisions using clear ranking data. Agencies can efficiently manage multiple clients while offering measurable local SEO results.</p>\n<hr data-start=\"2574\" data-end=\"2577\">\n<p data-start=\"2579\" data-end=\"2826\"><strong data-start=\"2579\" data-end=\"2593\">Conclusion</strong><br data-start=\"2593\" data-end=\"2596\">GMB Ranker demonstrates a strong blend of product thinking, system design, and SEO automation. It stands as a scalable solution for local businesses and agencies aiming to dominate local search results with data-driven strategies.</p>",
+      "seoMetadataId": "cml7ythxa000nn5n22cczvzfi",
+      "createdAt": "2026-02-04T11:49:45.597Z",
+      "updatedAt": "2026-02-04T12:06:15.903Z"
+    }
+  ],
+  "homepage": [],
+  "service": [
+    {
+      "id": "cmkv10udw0000np8vcnnaeicq",
+      "name": "SEO Optimization",
+      "slug": "seo-optimization",
+      "description": "Boost your website visibility on search engines.",
+      "icon": "search",
+      "content": null,
+      "features": null,
+      "order": 0,
+      "categoryId": null,
+      "seoMetadataId": "cmkv10udw0001np8vga33cxnl",
+      "createdAt": "2026-01-26T10:30:27.284Z",
+      "updatedAt": "2026-01-26T10:30:27.284Z"
+    }
+  ],
+  "blogPost": [
+    {
+      "id": "cml7x4w1y0002n5n2wavkeqfd",
+      "title": "Flowrage: Building Digital Products That Scale With You",
+      "slug": "flowrage-building-digital-products-that-scale-with-you",
+      "content": "<h3 data-start=\"723\" data-end=\"752\">🚀 What We Do at Flowrage</h3>\n<p data-start=\"754\" data-end=\"831\">At Flowrage, we don&rsquo;t just build websites&mdash;we engineer <strong data-start=\"808\" data-end=\"830\">digital ecosystems</strong>.</p>\n<p data-start=\"833\" data-end=\"863\"><strong data-start=\"833\" data-end=\"863\">Our core services include:</strong></p>\n<ul data-start=\"864\" data-end=\"1112\">\n<li data-start=\"864\" data-end=\"911\">\n<p data-start=\"866\" data-end=\"911\">Custom Web Development (React, modern stacks)</p>\n</li>\n<li data-start=\"912\" data-end=\"951\">\n<p data-start=\"914\" data-end=\"951\">Scalable System Architecture &amp; Design</p>\n</li>\n<li data-start=\"952\" data-end=\"995\">\n<p data-start=\"954\" data-end=\"995\">Admin Dashboards &amp; Data-Driven Interfaces</p>\n</li>\n<li data-start=\"996\" data-end=\"1032\">\n<p data-start=\"998\" data-end=\"1032\">UI/UX Design with Conversion Focus</p>\n</li>\n<li data-start=\"1033\" data-end=\"1070\">\n<p data-start=\"1035\" data-end=\"1070\">Performance Optimization &amp; Security</p>\n</li>\n<li data-start=\"1071\" data-end=\"1112\">\n<p data-start=\"1073\" data-end=\"1112\">Product Research &amp; Technical Consulting</p>\n</li>\n</ul>\n<p data-start=\"1114\" data-end=\"1232\">Every project starts with understanding your <strong data-start=\"1159\" data-end=\"1176\">business flow</strong>, then designing technology that fits naturally into it.</p>\n<hr data-start=\"1234\" data-end=\"1237\">\n<h3 data-start=\"1239\" data-end=\"1276\">💡 Our Approach: Flow Before Code</h3>\n<p data-start=\"1278\" data-end=\"1350\">Most problems don&rsquo;t come from bad code&mdash;they come from <strong data-start=\"1332\" data-end=\"1349\">bad structure</strong>.</p>\n<p data-start=\"1352\" data-end=\"1404\">That&rsquo;s why Flowrage follows a <em data-start=\"1382\" data-end=\"1394\">flow-first</em> approach:</p>\n<ol data-start=\"1405\" data-end=\"1566\">\n<li data-start=\"1405\" data-end=\"1439\">\n<p data-start=\"1408\" data-end=\"1439\">Understand the product vision</p>\n</li>\n<li data-start=\"1440\" data-end=\"1468\">\n<p data-start=\"1443\" data-end=\"1468\">Map system architecture</p>\n</li>\n<li data-start=\"1469\" data-end=\"1496\">\n<p data-start=\"1472\" data-end=\"1496\">Design user experience</p>\n</li>\n<li data-start=\"1497\" data-end=\"1527\">\n<p data-start=\"1500\" data-end=\"1527\">Build scalable components</p>\n</li>\n<li data-start=\"1528\" data-end=\"1566\">\n<p data-start=\"1531\" data-end=\"1566\">Optimize for performance &amp; growth</p>\n</li>\n</ol>\n<p data-start=\"1568\" data-end=\"1650\">This ensures that your product isn&rsquo;t just functional today&mdash;but ready for tomorrow.</p>\n<hr data-start=\"1652\" data-end=\"1655\">\n<h3 data-start=\"1657\" data-end=\"1707\">⚙️ Built for Startups, Businesses &amp; Innovators</h3>\n<p data-start=\"1709\" data-end=\"1724\">Whether you&rsquo;re:</p>\n<ul data-start=\"1725\" data-end=\"1857\">\n<li data-start=\"1725\" data-end=\"1748\">\n<p data-start=\"1727\" data-end=\"1748\">Launching a startup</p>\n</li>\n<li data-start=\"1749\" data-end=\"1781\">\n<p data-start=\"1751\" data-end=\"1781\">Scaling an existing platform</p>\n</li>\n<li data-start=\"1782\" data-end=\"1819\">\n<p data-start=\"1784\" data-end=\"1819\">Building an internal admin system</p>\n</li>\n<li data-start=\"1820\" data-end=\"1857\">\n<p data-start=\"1822\" data-end=\"1857\">Modernizing your digital presence</p>\n</li>\n</ul>\n<p data-start=\"1859\" data-end=\"1918\">Flowrage helps you move faster <strong data-start=\"1890\" data-end=\"1917\">without breaking things</strong>.</p>\n<p data-start=\"1920\" data-end=\"2040\">We focus on clean code, reusable components, and future-proof design so your platform can evolve as your business grows.</p>\n<hr data-start=\"2042\" data-end=\"2045\">\n<h3 data-start=\"2047\" data-end=\"2089\">🔒 Performance, Security &amp; Reliability</h3>\n<p data-start=\"2091\" data-end=\"2157\">Speed and security are not optional anymore&mdash;they are expectations.</p>\n<p data-start=\"2159\" data-end=\"2175\">Flowrage builds:</p>\n<ul data-start=\"2176\" data-end=\"2309\">\n<li data-start=\"2176\" data-end=\"2208\">\n<p data-start=\"2178\" data-end=\"2208\">Optimized frontend performance</p>\n</li>\n<li data-start=\"2209\" data-end=\"2240\">\n<p data-start=\"2211\" data-end=\"2240\">Secure authentication systems</p>\n</li>\n<li data-start=\"2241\" data-end=\"2271\">\n<p data-start=\"2243\" data-end=\"2271\">Clean APIs and data handling</p>\n</li>\n<li data-start=\"2272\" data-end=\"2309\">\n<p data-start=\"2274\" data-end=\"2309\">Reliable admin and monitoring tools</p>\n</li>\n</ul>\n<p data-start=\"2311\" data-end=\"2373\">Your users get a smooth experience, and you get peace of mind.</p>\n<hr data-start=\"2375\" data-end=\"2378\">\n<h3 data-start=\"2380\" data-end=\"2410\">🌱 Growing With Technology</h3>\n<p data-start=\"2412\" data-end=\"2463\">Technology changes fast&mdash;and Flowrage grows with it.</p>\n<p data-start=\"2465\" data-end=\"2485\">We actively explore:</p>\n<ul data-start=\"2486\" data-end=\"2603\">\n<li data-start=\"2486\" data-end=\"2514\">\n<p data-start=\"2488\" data-end=\"2514\">Modern frontend frameworks</p>\n</li>\n<li data-start=\"2515\" data-end=\"2545\">\n<p data-start=\"2517\" data-end=\"2545\">System design best practices</p>\n</li>\n<li data-start=\"2546\" data-end=\"2570\">\n<p data-start=\"2548\" data-end=\"2570\">AI-ready architectures</p>\n</li>\n<li data-start=\"2571\" data-end=\"2603\">\n<p data-start=\"2573\" data-end=\"2603\">Scalable cloud-based solutions</p>\n</li>\n</ul>\n<p data-start=\"2605\" data-end=\"2671\">Our goal is simple: <strong data-start=\"2625\" data-end=\"2670\">build products that won&rsquo;t need rebuilding</strong>.</p>\n<hr data-start=\"2673\" data-end=\"2676\">\n<h3 data-start=\"2678\" data-end=\"2715\">🤝 Let&rsquo;s Build Something Powerful</h3>\n<p data-start=\"2717\" data-end=\"2835\">If you&rsquo;re looking for a technology partner who understands both <strong data-start=\"2781\" data-end=\"2808\">code and product vision</strong>, Flowrage is here to help.</p>\n<p data-start=\"2837\" data-end=\"2902\">Let&rsquo;s turn ideas into scalable digital products&mdash;designed to flow.</p>",
+      "excerpt": "In today’s fast-moving digital world, having a website is not enough. You need systems that scale, interfaces that feel intuitive, and technology that grows with your business. That’s exactly where Flowrage comes in.\n\nFlowrage is a digital-first technology brand focused on crafting high-performance web solutions, scalable architectures, and user-centric experiences for modern businesses and startups.",
+      "featuredImage": "",
+      "faq": "[{\"question\":\"zsdfcvbn\",\"answer\":\"szdxfcgvbnm\"}]",
+      "authorId": "system",
+      "published": true,
+      "seoMetadataId": "cml7x4w1y0003n5n2bc3qy1lm",
+      "createdAt": "2026-02-04T11:02:37.894Z",
+      "updatedAt": "2026-02-05T09:32:24.218Z",
+      "categories": [],
+      "tags": []
+    }
+  ]
+}
