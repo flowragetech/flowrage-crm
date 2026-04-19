@@ -129,9 +129,15 @@ async function backupDatabase(config) {
   const backupPath = path.join(config.backupDirectory, `system-update-${timestamp}.sql`);
 
   if (config.backupCommand) {
+    const details = parseDatabaseUrl(databaseUrl);
+
     await runCommand(config.backupCommand.replace(/\{backupPath\}/g, backupPath), {
       cwd: config.workingDirectory,
-      timeoutMs: config.commandTimeoutMs
+      timeoutMs: config.commandTimeoutMs,
+      env: {
+        ...process.env,
+        PGPASSWORD: details.password
+      }
     });
 
     return backupPath;
