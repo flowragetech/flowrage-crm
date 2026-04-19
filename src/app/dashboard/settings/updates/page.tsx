@@ -1,14 +1,12 @@
 import PageContainer from '@/components/layout/page-container';
 import { Heading } from '@/components/ui/heading';
 import { Separator } from '@/components/ui/separator';
-import { SiteSettingsForm } from '@/features/settings/components/site-settings-form';
-import { SystemUpdatesCard } from '@/features/settings/components/system-updates-card';
+import { UpdatesClient } from '@/features/settings/components/updates-client';
 import { getCurrentUser } from '@/lib/auth';
-import { getSiteSettings } from '@/lib/site-settings';
 
 export const dynamic = 'force-dynamic';
 
-export default async function SiteSettingsPage() {
+export default async function UpdatesPage() {
   const currentUser = await getCurrentUser();
 
   if (
@@ -21,7 +19,7 @@ export default async function SiteSettingsPage() {
           <div className='flex items-start justify-between'>
             <Heading
               title='Access Denied'
-              description='You do not have permission to manage site settings.'
+              description='You do not have permission to manage system updates.'
             />
           </div>
           <Separator />
@@ -30,20 +28,17 @@ export default async function SiteSettingsPage() {
     );
   }
 
-  const siteSettings = await getSiteSettings();
-
   return (
     <PageContainer scrollable>
       <div className='space-y-4'>
         <div className='flex items-start justify-between'>
           <Heading
-            title='Site Settings'
-            description='Manage white-label branding, module defaults, and operational settings.'
+            title='System Updates'
+            description='Manage version checks, safe update runs, backups, and restart requirements.'
           />
         </div>
         <Separator />
-        <SystemUpdatesCard />
-        <SiteSettingsForm initialData={siteSettings} />
+        <UpdatesClient />
       </div>
     </PageContainer>
   );

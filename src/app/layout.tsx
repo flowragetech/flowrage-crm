@@ -1,6 +1,7 @@
 import Providers from '@/components/layout/providers';
 import { Toaster } from '@/components/ui/sonner';
 import { fontVariables } from '@/lib/font';
+import { ensureCurrentVersionSynced } from '@/lib/system-version';
 import ThemeProvider from '@/components/layout/ThemeToggle/theme-provider';
 import { cn } from '@/lib/utils';
 import { getSiteSettings } from '@/lib/site-settings';
@@ -43,6 +44,7 @@ export default async function RootLayout({
   const cookieStore = await cookies();
   const activeThemeValue = cookieStore.get('active_theme')?.value;
   const isScaled = activeThemeValue?.endsWith('-scaled');
+  await ensureCurrentVersionSynced();
   const settings = await getSiteSettings();
 
   return (

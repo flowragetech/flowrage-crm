@@ -11,6 +11,8 @@
     "build": "next build",
     "start": "next start -p 3000",
     "start:local": "set DATABASE_URL=postgresql://postgres:123456@localhost:5432/flowrag_crm && next start -p 3000",
+    "system:update": "git pull --ff-only && npm install && npx prisma migrate deploy && npm run build",
+    "system:update:runner": "node scripts/run-system-update.cjs",
     "admin:create": "tsx prisma/create-super-admin.ts",
     "admin:create:local": "set ADMIN_EMAIL=flowragetech@gmail.com && set ADMIN_PASSWORD=Flowrage@2025!@# && set DATABASE_URL=postgresql://postgres:123456@localhost:5432/flowrage_admin?schema=public && tsx prisma/create-super-admin.ts",
     "admin:reset:create": "tsx prisma/reset-and-create-admin.ts",

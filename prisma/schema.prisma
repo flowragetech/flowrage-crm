@@ -371,8 +371,39 @@ model User {
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
   appRole       AppRole?  @relation(fields: [appRoleId], references: [id])
+  systemUpdateJobs SystemUpdateJob[]
   tenant        Tenant?   @relation(fields: [tenantId], references: [id])
   sessions      Session[]
+}
+
+model AppMeta {
+  key       String   @id
+  value     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model SystemUpdateJob {
+  id                String   @id @default(cuid())
+  targetKind        String   @default("core")
+  currentVersion    String
+  targetVersion     String?
+  status            String   @default("queued")
+  strategy          String
+  manifestUrl       String?
+  changelog         String?
+  downloadUrl       String?
+  backupPath        String?
+  summary           String?
+  errorMessage      String?
+  log               String?
+  restartRequired   Boolean  @default(false)
+  triggeredByUserId String?
+  startedAt         DateTime?
+  completedAt       DateTime?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  triggeredByUser   User?    @relation(fields: [triggeredByUserId], references: [id], onDelete: SetNull)
 }
 
 model Session {

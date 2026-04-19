@@ -181,10 +181,23 @@ export function buildNavItems(toggles: Partial<ModuleToggles> = {}): NavItem[] {
     },
     {
       title: 'Settings',
-      url: '/dashboard/settings',
+      url: '#',
       icon: 'settings',
       isActive: false,
-      items: [],
+      items: [
+        {
+          title: 'General',
+          url: '/dashboard/settings',
+          icon: 'settings',
+          access: { roles: ['ADMIN'] }
+        },
+        {
+          title: 'Updates',
+          url: '/dashboard/settings/updates',
+          icon: 'arrowRight',
+          access: { roles: ['ADMIN'] }
+        }
+      ],
       access: { roles: ['ADMIN'] }
     },
     {
