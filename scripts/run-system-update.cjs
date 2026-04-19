@@ -44,6 +44,7 @@ function runCommand(command, options = {}) {
       command,
       {
         cwd: options.cwd,
+        env: options.env || process.env,
         timeout: options.timeoutMs,
         windowsHide: true,
         maxBuffer: 1024 * 1024 * 20
@@ -137,14 +138,15 @@ async function backupDatabase(config) {
   }
 
   const details = parseDatabaseUrl(databaseUrl);
-  const pgDumpCommand =
-    process.platform === 'win32'
-      ? `$env:PGPASSWORD="${details.password}"; pg_dump -h "${details.host}" -p "${details.port}" -U "${details.username}" -d "${details.database}" -n "${details.schema}" -f "${backupPath}"`
-      : `PGPASSWORD="${details.password}" pg_dump -h "${details.host}" -p "${details.port}" -U "${details.username}" -d "${details.database}" -n "${details.schema}" -f "${backupPath}"`;
+  const pgDumpCommand = `pg_dump -h "${details.host}" -p "${details.port}" -U "${details.username}" -d "${details.database}" -n "${details.schema}" -f "${backupPath}"`;
 
   await runCommand(pgDumpCommand, {
     cwd: config.workingDirectory,
-    timeoutMs: config.commandTimeoutMs
+    timeoutMs: config.commandTimeoutMs,
+    env: {
+      ...process.env,
+      PGPASSWORD: details.password
+    }
   });
 
   return backupPath;
