@@ -6,12 +6,12 @@ import { Separator } from '@/components/ui/separator';
 import { TagsTable } from '@/features/blog/components/tags-table';
 import { TagForm } from '@/features/blog/components/tag-form';
 import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle
-} from '@/components/ui/sheet';
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerHeader,
+  DrawerTitle
+} from '@/components/ui/drawer';
 import { deleteTag } from '@/app/actions/blog';
 import { toast } from 'sonner';
 import {
@@ -86,24 +86,28 @@ export function TagsClient({ initialData }: TagsClientProps) {
         onDelete={onDelete}
       />
 
-      <Sheet open={isOpen} onOpenChange={setIsOpen}>
-        <SheetContent className='sm:max-w-[400px]'>
-          <SheetHeader>
-            <SheetTitle>{selectedTag ? 'Edit Tag' : 'Add New Tag'}</SheetTitle>
-            <SheetDescription>
-              {selectedTag
-                ? 'Update the tag name and slug.'
-                : 'Create a new tag for your blog posts.'}
-            </SheetDescription>
-          </SheetHeader>
-          <div className='py-6'>
-            <TagForm
-              initialData={selectedTag}
-              onSuccess={() => setIsOpen(false)}
-            />
+      <Drawer open={isOpen} onOpenChange={setIsOpen}>
+        <DrawerContent>
+          <div className='mx-auto w-full max-w-lg'>
+            <DrawerHeader>
+              <DrawerTitle>
+                {selectedTag ? 'Edit Tag' : 'Add New Tag'}
+              </DrawerTitle>
+              <DrawerDescription>
+                {selectedTag
+                  ? 'Update the tag name and slug.'
+                  : 'Create a new tag for your blog posts.'}
+              </DrawerDescription>
+            </DrawerHeader>
+            <div className='p-4 pb-0'>
+              <TagForm
+                initialData={selectedTag}
+                onSuccess={() => setIsOpen(false)}
+              />
+            </div>
           </div>
-        </SheetContent>
-      </Sheet>
+        </DrawerContent>
+      </Drawer>
 
       <AlertDialog open={isDeleting} onOpenChange={setIsDeleting}>
         <AlertDialogContent>

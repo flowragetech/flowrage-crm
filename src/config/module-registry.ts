@@ -34,12 +34,6 @@ const moduleRegistry: ModuleDefinition[] = [
         url: '/dashboard/cms/pages',
         icon: 'page',
         access: { roles: ['ADMIN', 'EDITOR'] }
-      },
-      {
-        title: 'Homepage',
-        url: '/dashboard/cms/homepage',
-        icon: 'dashboard',
-        access: { roles: ['ADMIN', 'EDITOR'] }
       }
     ]
   },

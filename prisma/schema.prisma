@@ -23,7 +23,7 @@ model SeoMetadata {
   updatedAt       DateTime            @updatedAt
   blogPosts       BlogPost[]
   categories      Category[]
-  homepage        Homepage?
+
   pages           Page[]
   portfolios      Portfolio[]
   reusableBlocks  ReusableComponent[]
@@ -207,19 +207,6 @@ model Media {
   updatedAt   DateTime     @updatedAt
 }
 
-model Homepage {
-  id            String      @id @default(cuid())
-  heroTitle     String
-  heroSubtitle  String
-  heroImage     String?
-  features      String?
-  testimonials  String?
-  stats         String?
-  faq           String?
-  seoMetadataId String      @unique
-  updatedAt     DateTime    @updatedAt
-  seoMetadata   SeoMetadata @relation(fields: [seoMetadataId], references: [id])
-}
 
 model ServiceCategory {
   id          String    @id @default(cuid())

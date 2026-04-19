@@ -6,12 +6,12 @@ import { Separator } from '@/components/ui/separator';
 import { CategoriesTable } from '@/features/blog/components/categories-table';
 import { CategoryForm } from '@/features/blog/components/category-form';
 import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle
-} from '@/components/ui/sheet';
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerHeader,
+  DrawerTitle
+} from '@/components/ui/drawer';
 import { deleteCategory } from '@/app/actions/blog';
 import { toast } from 'sonner';
 import {
@@ -88,26 +88,28 @@ export function CategoriesClient({ initialData }: CategoriesClientProps) {
         onDelete={onDelete}
       />
 
-      <Sheet open={isOpen} onOpenChange={setIsOpen}>
-        <SheetContent className='sm:max-w-[400px]'>
-          <SheetHeader>
-            <SheetTitle>
-              {selectedCategory ? 'Edit Category' : 'Add New Category'}
-            </SheetTitle>
-            <SheetDescription>
-              {selectedCategory
-                ? 'Update the category name and slug.'
-                : 'Create a new category for your blog posts.'}
-            </SheetDescription>
-          </SheetHeader>
-          <div className='px-4 py-6'>
-            <CategoryForm
-              initialData={selectedCategory}
-              onSuccess={() => setIsOpen(false)}
-            />
+      <Drawer open={isOpen} onOpenChange={setIsOpen}>
+        <DrawerContent>
+          <div className='mx-auto w-full max-w-lg'>
+            <DrawerHeader>
+              <DrawerTitle>
+                {selectedCategory ? 'Edit Category' : 'Add New Category'}
+              </DrawerTitle>
+              <DrawerDescription>
+                {selectedCategory
+                  ? 'Update the category name and slug.'
+                  : 'Create a new category for your blog posts.'}
+              </DrawerDescription>
+            </DrawerHeader>
+            <div className='p-4 pb-0'>
+              <CategoryForm
+                initialData={selectedCategory}
+                onSuccess={() => setIsOpen(false)}
+              />
+            </div>
           </div>
-        </SheetContent>
-      </Sheet>
+        </DrawerContent>
+      </Drawer>
 
       <AlertDialog open={isDeleting} onOpenChange={setIsDeleting}>
         <AlertDialogContent>

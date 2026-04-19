@@ -14,11 +14,11 @@ import Image from 'next/image';
 import { toast } from 'sonner';
 import { format, isSameMonth, startOfMonth } from 'date-fns';
 import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle
-} from '@/components/ui/sheet';
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle
+} from '@/components/ui/drawer';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
@@ -486,132 +486,136 @@ export function WordPressMediaLibrary({
         </div>
       )}
 
-      {/* WP Style Details Sidebar (Sheet) */}
-      <Sheet open={!!selectedItem} onOpenChange={() => setSelectedItem(null)}>
-        <SheetContent className='overflow-y-auto px-6 sm:max-w-md'>
-          <SheetHeader className='mb-6 pt-2'>
-            <SheetTitle>Attachment Details</SheetTitle>
-          </SheetHeader>
+      {/* WP Style Details Sidebar (Drawer) */}
+      <Drawer open={!!selectedItem} onOpenChange={() => setSelectedItem(null)}>
+        <DrawerContent className='max-h-[85vh]'>
+          <div className='mx-auto w-full max-w-2xl overflow-y-auto'>
+            <DrawerHeader className='mb-6 pt-2'>
+              <DrawerTitle>Attachment Details</DrawerTitle>
+            </DrawerHeader>
 
-          {selectedItem && (
-            <div className='space-y-6 pb-10'>
-              <div className='flex gap-4'>
-                <div className='bg-muted relative h-32 w-32 shrink-0 overflow-hidden rounded border'>
-                  <Image
-                    src={selectedItem.url}
-                    alt=''
-                    fill
-                    className='object-contain'
-                  />
-                </div>
-                <div className='space-y-1 overflow-hidden text-sm'>
-                  <p className='truncate font-bold'>{selectedItem.name}</p>
-                  <p className='text-muted-foreground'>
-                    {format(new Date(selectedItem.createdAt), 'MMMM d, yyyy')}
-                  </p>
-                  <p className='text-muted-foreground'>
-                    {formatBytes(selectedItem.size)}
-                  </p>
-                  {selectedItem.width && (
+            {selectedItem && (
+              <div className='space-y-6 px-6 pb-10'>
+                <div className='flex gap-4'>
+                  <div className='bg-muted relative h-32 w-32 shrink-0 overflow-hidden rounded border'>
+                    <Image
+                      src={selectedItem.url}
+                      alt=''
+                      fill
+                      className='object-contain'
+                    />
+                  </div>
+                  <div className='space-y-1 overflow-hidden text-sm'>
+                    <p className='truncate font-bold'>{selectedItem.name}</p>
                     <p className='text-muted-foreground'>
-                      {selectedItem.width} by {selectedItem.height} pixels
+                      {format(new Date(selectedItem.createdAt), 'MMMM d, yyyy')}
                     </p>
-                  )}
-                  <AlertDialog>
-                    <AlertDialogTrigger asChild>
-                      <Button
-                        variant='link'
-                        className='text-destructive h-auto p-0 text-xs'
-                      >
-                        Delete Permanently
-                      </Button>
-                    </AlertDialogTrigger>
-                    <AlertDialogContent>
-                      <AlertDialogHeader>
-                        <AlertDialogTitle>Are you sure?</AlertDialogTitle>
-                        <AlertDialogDescription>
-                          This action cannot be undone. This will permanently
-                          delete the file from the server.
-                        </AlertDialogDescription>
-                      </AlertDialogHeader>
-                      <AlertDialogFooter>
-                        <AlertDialogCancel>Cancel</AlertDialogCancel>
-                        <AlertDialogAction
-                          onClick={() => handleDelete(selectedItem.id)}
-                          className='bg-destructive text-destructive-foreground'
+                    <p className='text-muted-foreground'>
+                      {formatBytes(selectedItem.size)}
+                    </p>
+                    {selectedItem.width && (
+                      <p className='text-muted-foreground'>
+                        {selectedItem.width} by {selectedItem.height} pixels
+                      </p>
+                    )}
+                    <AlertDialog>
+                      <AlertDialogTrigger asChild>
+                        <Button
+                          variant='link'
+                          className='text-destructive h-auto p-0 text-xs'
                         >
                           Delete Permanently
-                        </AlertDialogAction>
-                      </AlertDialogFooter>
-                    </AlertDialogContent>
-                  </AlertDialog>
-                </div>
-              </div>
-
-              <div className='space-y-4'>
-                <div className='grid gap-2'>
-                  <Label htmlFor='alt'>Alternative Text</Label>
-                  <Input
-                    id='alt'
-                    defaultValue={selectedItem.altText || ''}
-                    onBlur={(e) =>
-                      handleUpdate({ altText: e.target.value || undefined })
-                    }
-                  />
-                  <p className='text-muted-foreground text-[10px]'>
-                    Describe the purpose of the image. Leave empty if purely
-                    decorative.
-                  </p>
-                </div>
-
-                <div className='grid gap-2'>
-                  <Label htmlFor='title'>Title</Label>
-                  <Input
-                    id='title'
-                    defaultValue={selectedItem.name}
-                    onBlur={(e) => handleUpdate({ name: e.target.value })}
-                  />
+                        </Button>
+                      </AlertDialogTrigger>
+                      <AlertDialogContent>
+                        <AlertDialogHeader>
+                          <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+                          <AlertDialogDescription>
+                            This action cannot be undone. This will permanently
+                            delete the file from the server.
+                          </AlertDialogDescription>
+                        </AlertDialogHeader>
+                        <AlertDialogFooter>
+                          <AlertDialogCancel>Cancel</AlertDialogCancel>
+                          <AlertDialogAction
+                            onClick={() => handleDelete(selectedItem.id)}
+                            className='bg-destructive text-destructive-foreground'
+                          >
+                            Delete Permanently
+                          </AlertDialogAction>
+                        </AlertDialogFooter>
+                      </AlertDialogContent>
+                    </AlertDialog>
+                  </div>
                 </div>
 
-                <div className='grid gap-2'>
-                  <Label htmlFor='caption'>Caption</Label>
-                  <Textarea
-                    id='caption'
-                    className='h-20'
-                    defaultValue={selectedItem.caption || ''}
-                    onBlur={(e) =>
-                      handleUpdate({ caption: e.target.value || undefined })
-                    }
-                  />
-                </div>
+                <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
+                  <div className='space-y-4'>
+                    <div className='grid gap-2'>
+                      <Label htmlFor='alt'>Alternative Text</Label>
+                      <Input
+                        id='alt'
+                        defaultValue={selectedItem.altText || ''}
+                        onBlur={(e) =>
+                          handleUpdate({ altText: e.target.value || undefined })
+                        }
+                      />
+                      <p className='text-muted-foreground text-[10px]'>
+                        Describe the purpose of the image. Leave empty if purely
+                        decorative.
+                      </p>
+                    </div>
 
-                <div className='grid gap-2'>
-                  <Label htmlFor='desc'>Description</Label>
-                  <Textarea
-                    id='desc'
-                    className='h-20'
-                    defaultValue={selectedItem.description || ''}
-                    onBlur={(e) =>
-                      handleUpdate({ description: e.target.value || undefined })
-                    }
-                  />
-                </div>
+                    <div className='grid gap-2'>
+                      <Label htmlFor='title'>Title</Label>
+                      <Input
+                        id='title'
+                        defaultValue={selectedItem.name}
+                        onBlur={(e) => handleUpdate({ name: e.target.value })}
+                      />
+                    </div>
 
-                <div className='grid gap-2'>
-                  <Label htmlFor='category'>Category</Label>
-                  <Input
-                    id='category'
-                    defaultValue={selectedItem.category || ''}
-                    onBlur={(e) =>
-                      handleUpdate({
-                        category: e.target.value || 'uncategorized'
-                      })
-                    }
-                  />
-                  <p className='text-muted-foreground text-[10px]'>
-                    Organize your media into categories (e.g., blog, portfolio,
-                    services).
-                  </p>
+                    <div className='grid gap-2'>
+                      <Label htmlFor='category'>Category</Label>
+                      <Input
+                        id='category'
+                        defaultValue={selectedItem.category || ''}
+                        onBlur={(e) =>
+                          handleUpdate({
+                            category: e.target.value || 'uncategorized'
+                          })
+                        }
+                      />
+                    </div>
+                  </div>
+
+                  <div className='space-y-4'>
+                    <div className='grid gap-2'>
+                      <Label htmlFor='caption'>Caption</Label>
+                      <Textarea
+                        id='caption'
+                        className='h-20'
+                        defaultValue={selectedItem.caption || ''}
+                        onBlur={(e) =>
+                          handleUpdate({ caption: e.target.value || undefined })
+                        }
+                      />
+                    </div>
+
+                    <div className='grid gap-2'>
+                      <Label htmlFor='desc'>Description</Label>
+                      <Textarea
+                        id='desc'
+                        className='h-20'
+                        defaultValue={selectedItem.description || ''}
+                        onBlur={(e) =>
+                          handleUpdate({
+                            description: e.target.value || undefined
+                          })
+                        }
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 <div className='grid gap-2'>
@@ -635,70 +639,70 @@ export function WordPressMediaLibrary({
                     </Button>
                   </div>
                 </div>
-              </div>
 
-              {isUpdating && (
-                <div className='text-muted-foreground flex items-center gap-2 text-sm italic'>
-                  <IconLoader2 className='animate-spin' size={14} />
-                  Saving changes...
-                </div>
-              )}
+                {isUpdating && (
+                  <div className='text-muted-foreground flex items-center gap-2 text-sm italic'>
+                    <IconLoader2 className='animate-spin' size={14} />
+                    Saving changes...
+                  </div>
+                )}
 
-              <Separator />
+                <Separator />
 
-              <div className='flex items-center justify-between'>
-                <AlertDialog>
-                  <AlertDialogTrigger asChild>
-                    <Button
-                      variant='link'
-                      className='text-destructive h-auto p-0'
-                    >
-                      Delete Permanently
-                    </Button>
-                  </AlertDialogTrigger>
-                  <AlertDialogContent>
-                    <AlertDialogHeader>
-                      <AlertDialogTitle>Are you sure?</AlertDialogTitle>
-                      <AlertDialogDescription>
-                        This file will be gone forever.
-                      </AlertDialogDescription>
-                    </AlertDialogHeader>
-                    <AlertDialogFooter>
-                      <AlertDialogCancel>Cancel</AlertDialogCancel>
-                      <AlertDialogAction
-                        onClick={() => handleDelete(selectedItem.id)}
-                        className='bg-destructive text-destructive-foreground'
+                <div className='flex items-center justify-between'>
+                  <AlertDialog>
+                    <AlertDialogTrigger asChild>
+                      <Button
+                        variant='link'
+                        className='text-destructive h-auto p-0'
                       >
-                        Delete
-                      </AlertDialogAction>
-                    </AlertDialogFooter>
-                  </AlertDialogContent>
-                </AlertDialog>
+                        Delete Permanently
+                      </Button>
+                    </AlertDialogTrigger>
+                    <AlertDialogContent>
+                      <AlertDialogHeader>
+                        <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+                        <AlertDialogDescription>
+                          This file will be gone forever.
+                        </AlertDialogDescription>
+                      </AlertDialogHeader>
+                      <AlertDialogFooter>
+                        <AlertDialogCancel>Cancel</AlertDialogCancel>
+                        <AlertDialogAction
+                          onClick={() => handleDelete(selectedItem.id)}
+                          className='bg-destructive text-destructive-foreground'
+                        >
+                          Delete
+                        </AlertDialogAction>
+                      </AlertDialogFooter>
+                    </AlertDialogContent>
+                  </AlertDialog>
 
-                <Button variant='outline' size='sm' asChild>
-                  <a href={selectedItem.url} target='_blank'>
-                    View attachment page
-                  </a>
-                </Button>
-              </div>
-
-              {mode === 'picker' && (
-                <div className='pt-4'>
-                  <Button
-                    className='w-full'
-                    onClick={() => {
-                      onSelect?.(selectedItem);
-                      setSelectedItem(null);
-                    }}
-                  >
-                    Select Media
+                  <Button variant='outline' size='sm' asChild>
+                    <a href={selectedItem.url} target='_blank'>
+                      View attachment page
+                    </a>
                   </Button>
                 </div>
-              )}
-            </div>
-          )}
-        </SheetContent>
-      </Sheet>
+
+                {mode === 'picker' && (
+                  <div className='pt-4'>
+                    <Button
+                      className='w-full'
+                      onClick={() => {
+                        onSelect?.(selectedItem);
+                        setSelectedItem(null);
+                      }}
+                    >
+                      Select Media
+                    </Button>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        </DrawerContent>
+      </Drawer>
     </div>
   );
 }

@@ -248,15 +248,6 @@ export default async function OverViewLayout() {
                     <IconPlus size={16} /> New Service
                   </Link>
                 </Button>
-                <Button
-                  variant='outline'
-                  className='justify-start gap-2'
-                  asChild
-                >
-                  <Link href='/dashboard/cms/homepage'>
-                    <IconBriefcase size={16} /> Edit Home
-                  </Link>
-                </Button>
               </CardContent>
             </Card>
 
