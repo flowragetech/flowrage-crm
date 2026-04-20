@@ -15,8 +15,14 @@ export default function DbHealth() {
   }
 
   useEffect(() => {
-    check();
-    const id = setInterval(check, 15000);
+    void check();
+
+    const id = setInterval(() => {
+      if (document.visibilityState === 'visible') {
+        void check();
+      }
+    }, 60000);
+
     return () => clearInterval(id);
   }, []);
 

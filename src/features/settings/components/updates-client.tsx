@@ -53,10 +53,26 @@ function statusVariant(status?: string | null) {
   }
 }
 
+async function fetchUpdateStatus() {
+  const response = await fetch('/api/system/updates/check', {
+    cache: 'no-store'
+  });
+
+  const payload = await response.json();
+
+  if (!response.ok) {
+    throw new Error(payload.error || 'Failed to load update status.');
+  }
+
+  return payload as UpdatePayload;
+}
+
 export function UpdatesClient() {
   const [data, setData] = useState<UpdatePayload | null>(null);
   const [loading, setLoading] = useState(true);
   const [running, setRunning] = useState(false);
+  const latestJobId = data?.latestJob?.id;
+  const latestJobStatus = data?.latestJob?.status;
 
   const load = async (silent = false) => {
     if (!silent) {
@@ -64,16 +80,7 @@ export function UpdatesClient() {
     }
 
     try {
-      const response = await fetch('/api/system/updates/check', {
-        cache: 'no-store'
-      });
-
-      const payload = await response.json();
-
-      if (!response.ok) {
-        throw new Error(payload.error || 'Failed to load update status.');
-      }
-
+      const payload = await fetchUpdateStatus();
       setData(payload);
     } catch (error) {
       const message =
@@ -89,23 +96,60 @@ export function UpdatesClient() {
   };
 
   useEffect(() => {
-    void load();
+    let cancelled = false;
+
+    const run = async () => {
+      try {
+        const payload = await fetchUpdateStatus();
+
+        if (!cancelled) {
+          setData(payload);
+        }
+      } catch (error) {
+        if (!cancelled) {
+          const message =
+            error instanceof Error
+              ? error.message
+              : 'Failed to load update status.';
+          toast.error(message);
+        }
+      } finally {
+        if (!cancelled) {
+          setLoading(false);
+        }
+      }
+    };
+
+    void run();
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   useEffect(() => {
     if (
-      !data?.latestJob ||
-      !['queued', 'running'].includes(data.latestJob.status)
+      !latestJobId ||
+      !['queued', 'running'].includes(latestJobStatus || '')
+    ) {
+      return;
+    }
+
+    if (
+      typeof document !== 'undefined' &&
+      document.visibilityState !== 'visible'
     ) {
       return;
     }
 
     const timer = window.setInterval(() => {
-      void load(true);
-    }, 4000);
+      if (document.visibilityState === 'visible') {
+        void load(true);
+      }
+    }, 10000);
 
     return () => window.clearInterval(timer);
-  }, [data?.latestJob]);
+  }, [latestJobId, latestJobStatus]);
 
   const runUpdate = async () => {
     setRunning(true);

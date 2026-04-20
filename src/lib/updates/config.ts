@@ -8,7 +8,7 @@ function detectPackageManagerInstallCommand() {
   const cwd = process.cwd();
 
   if (fs.existsSync(path.join(cwd, 'package-lock.json'))) {
-    return 'npm install';
+    return 'npm ci';
   }
 
   if (fs.existsSync(path.join(cwd, 'pnpm-lock.yaml'))) {

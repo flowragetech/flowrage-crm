@@ -15,6 +15,10 @@ if (!jobId) {
 }
 
 function getConfig() {
+  const hasPackageLock = fs.existsSync(
+    path.join(process.cwd(), 'package-lock.json')
+  );
+
   return {
     manifestUrl: process.env.UPDATE_MANIFEST_URL || null,
     workingDirectory: process.env.UPDATE_WORKDIR || process.cwd(),
@@ -29,7 +33,9 @@ function getConfig() {
     backupCommand: process.env.UPDATE_BACKUP_COMMAND || null,
     commands: {
       pull: process.env.UPDATE_PULL_COMMAND || 'git pull --ff-only',
-      install: process.env.UPDATE_INSTALL_COMMAND || 'npm install',
+      install:
+        process.env.UPDATE_INSTALL_COMMAND ||
+        (hasPackageLock ? 'npm ci' : 'npm install'),
       migrate:
         process.env.UPDATE_MIGRATE_COMMAND || 'npx prisma migrate deploy',
       build: process.env.UPDATE_BUILD_COMMAND || 'npm run build',
