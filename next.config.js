@@ -1,0 +1,94 @@
+// Define the base Next.js configuration
+/** @type {import('next').NextConfig} */
+const baseConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'api.slingacademy.com',
+        port: ''
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: ''
+      }
+    ]
+  },
+  transpilePackages: ['geist'],
+  serverExternalPackages: ['@prisma/client'],
+  output: process.platform === 'win32' ? undefined : 'standalone',
+  async headers() {
+    const frontendOrigin =
+      process.env.NEXT_PUBLIC_FRONTEND_URL || 'http://localhost:3004';
+
+    return [
+      {
+        source: '/api/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Credentials', value: 'true' },
+          { key: 'Access-Control-Allow-Origin', value: frontendOrigin },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET,DELETE,PATCH,POST,PUT,OPTIONS'
+          },
+          {
+            key: 'Access-Control-Allow-Headers',
+            value:
+              'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, Authorization'
+          }
+        ]
+      }
+    ];
+  }
+};
+
+let configWithPlugins = baseConfig;
+
+// Conditionally enable Sentry configuration
+if (!process.env.NEXT_PUBLIC_SENTRY_DISABLED) {
+  try {
+    const { withSentryConfig } = await import('@sentry/nextjs');
+
+    configWithPlugins = withSentryConfig(configWithPlugins, {
+      // For all available options, see:
+      // https://www.npmjs.com/package/@sentry/webpack-plugin#options
+      // FIXME: Add your Sentry organization and project names
+      org: process.env.NEXT_PUBLIC_SENTRY_ORG,
+      project: process.env.NEXT_PUBLIC_SENTRY_PROJECT,
+      // Only print logs for uploading source maps in CI
+      silent: !process.env.CI,
+
+      // For all available options, see:
+      // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
+
+      // Upload a larger set of source maps for prettier stack traces (increases build time)
+      widenClientFileUpload: true,
+
+      // Upload a larger set of source maps for prettier stack traces (increases build time)
+      reactComponentAnnotation: {
+        enabled: true
+      },
+
+      // Route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
+      // This can increase your server load as well as your hosting bill.
+      // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
+      // side errors will fail.
+      tunnelRoute: '/monitoring',
+
+      // Automatically tree-shake Sentry logger statements to reduce bundle size
+      disableLogger: true,
+
+      // Disable Sentry telemetry
+      telemetry: false
+    });
+  } catch (error) {
+    console.warn(
+      'Sentry config could not be loaded. Continuing without Sentry integration.',
+      error instanceof Error ? error.message : error
+    );
+  }
+}
+
+const nextConfig = configWithPlugins;
+export default nextConfig;
