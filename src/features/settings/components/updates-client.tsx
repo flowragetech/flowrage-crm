@@ -94,7 +94,7 @@ export function UpdatesClient() {
 
   useEffect(() => {
     if (
-      !data?.latestJob ||
+      !data?.latestJob?.id ||
       !['queued', 'running'].includes(data.latestJob.status)
     ) {
       return;
@@ -105,7 +105,7 @@ export function UpdatesClient() {
     }, 4000);
 
     return () => window.clearInterval(timer);
-  }, [data?.latestJob]);
+  }, [data?.latestJob?.id, data?.latestJob?.status]);
 
   const runUpdate = async () => {
     setRunning(true);
